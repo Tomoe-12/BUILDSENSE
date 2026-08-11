@@ -1,0 +1,197 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "rec_5g_1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.03576205934533,
+          20.784304866762774
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-01",
+        "name": "Recommended 5G Small Cell #1 (Taunggyi Downtown East)",
+        "region": "Taunggyi",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "93.5%",
+        "status": "Proposed AI Deployment"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rec_5g_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.92713834767211,
+          20.656720386333273
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-02",
+        "name": "Recommended 5G Small Cell #2 (Taunggyi Merchant St)",
+        "region": "Nyaungshwe",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "94.0%",
+        "status": "Proposed AI Deployment"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rec_5g_3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.16352747822754,
+          20.807053100997667
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-03",
+        "name": "Recommended 5G Small Cell #3 (Hopong Highway Hub)",
+        "region": "Hopong",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "96.3%",
+        "status": "Proposed AI Deployment"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rec_5g_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.03494760607077,
+          20.814824833125677
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-04",
+        "name": "Recommended 5G Small Cell #4 (Hopong Market)",
+        "region": "Taunggyi",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "93.0%",
+        "status": "Proposed AI Deployment"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rec_5g_5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.04868326436579,
+          20.75640868793888
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-05",
+        "name": "Recommended 5G Small Cell #5 (Nyaungshwe Entry Rd)",
+        "region": "Taunggyi",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "92.3%",
+        "status": "Proposed AI Deployment"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rec_5g_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.06926743707012,
+          20.789266485807822
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-06",
+        "name": "Recommended 5G Small Cell #6 (Nyaungshwe Canal North)",
+        "region": "Taunggyi",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "93.0%",
+        "status": "Proposed AI Deployment"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rec_5g_7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.013980264224,
+          20.860438797291575
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-07",
+        "name": "Recommended 5G Small Cell #7 (Inle Lake Tourist Pier)",
+        "region": "Taunggyi",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "92.7%",
+        "status": "Proposed AI Deployment"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rec_5g_8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.15014387613104,
+          20.768822310287455
+        ]
+      },
+      "properties": {
+        "id": "REC-5G-08",
+        "name": "Recommended 5G Small Cell #8 (Inle North Basin)",
+        "region": "Hopong",
+        "recommended_height_m": 18.0,
+        "target_coverage_radius_m": 450,
+        "estimated_speed_boost_mbps": "+45.0 Mbps",
+        "estimated_capacity_subscribers": 1200,
+        "site_type": "Pole / Smart Rooftop 5G Small Cell",
+        "power_efficiency": "Solar Hybrid / Low Power (35W)",
+        "ai_confidence": "97.0%",
+        "status": "Proposed AI Deployment"
+      }
+    }
+  ]
+}

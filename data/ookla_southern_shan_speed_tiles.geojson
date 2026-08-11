@@ -1,0 +1,6485 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "speed_tile_1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.015,
+              20.765
+            ],
+            [
+              97.02250000000001,
+              20.765
+            ],
+            [
+              97.02250000000001,
+              20.77166666666667
+            ],
+            [
+              97.015,
+              20.77166666666667
+            ],
+            [
+              97.015,
+              20.765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0001",
+        "region": "Taunggyi",
+        "avg_d_kbps": 18200,
+        "avg_u_kbps": 21800,
+        "download_mbps": 18.2,
+        "upload_mbps": 21.8,
+        "latency_ms": 26,
+        "tests_count": 352,
+        "devices_count": 58,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.02250000000001,
+              20.765
+            ],
+            [
+              97.03,
+              20.765
+            ],
+            [
+              97.03,
+              20.77166666666667
+            ],
+            [
+              97.02250000000001,
+              20.77166666666667
+            ],
+            [
+              97.02250000000001,
+              20.765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0002",
+        "region": "Taunggyi",
+        "avg_d_kbps": 32100,
+        "avg_u_kbps": 15200,
+        "download_mbps": 32.1,
+        "upload_mbps": 15.2,
+        "latency_ms": 44,
+        "tests_count": 119,
+        "devices_count": 177,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 17.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_3",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.03,
+              20.765
+            ],
+            [
+              97.0375,
+              20.765
+            ],
+            [
+              97.0375,
+              20.77166666666667
+            ],
+            [
+              97.03,
+              20.77166666666667
+            ],
+            [
+              97.03,
+              20.765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0003",
+        "region": "Taunggyi",
+        "avg_d_kbps": 18700,
+        "avg_u_kbps": 8200,
+        "download_mbps": 18.7,
+        "upload_mbps": 8.2,
+        "latency_ms": 52,
+        "tests_count": 536,
+        "devices_count": 31,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_4",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0375,
+              20.765
+            ],
+            [
+              97.04499999999999,
+              20.765
+            ],
+            [
+              97.04499999999999,
+              20.77166666666667
+            ],
+            [
+              97.0375,
+              20.77166666666667
+            ],
+            [
+              97.0375,
+              20.765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0004",
+        "region": "Taunggyi",
+        "avg_d_kbps": 5700,
+        "avg_u_kbps": 2500,
+        "download_mbps": 5.7,
+        "upload_mbps": 2.5,
+        "latency_ms": 28,
+        "tests_count": 205,
+        "devices_count": 50,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 44.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_5",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.045,
+              20.765
+            ],
+            [
+              97.05250000000001,
+              20.765
+            ],
+            [
+              97.05250000000001,
+              20.77166666666667
+            ],
+            [
+              97.045,
+              20.77166666666667
+            ],
+            [
+              97.045,
+              20.765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0005",
+        "region": "Taunggyi",
+        "avg_d_kbps": 18500,
+        "avg_u_kbps": 19400,
+        "download_mbps": 18.5,
+        "upload_mbps": 19.4,
+        "latency_ms": 50,
+        "tests_count": 315,
+        "devices_count": 86,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_6",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.05250000000001,
+              20.765
+            ],
+            [
+              97.06,
+              20.765
+            ],
+            [
+              97.06,
+              20.77166666666667
+            ],
+            [
+              97.05250000000001,
+              20.77166666666667
+            ],
+            [
+              97.05250000000001,
+              20.765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0006",
+        "region": "Taunggyi",
+        "avg_d_kbps": 18100,
+        "avg_u_kbps": 8100,
+        "download_mbps": 18.1,
+        "upload_mbps": 8.1,
+        "latency_ms": 24,
+        "tests_count": 532,
+        "devices_count": 141,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_7",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.015,
+              20.77166666666667
+            ],
+            [
+              97.02250000000001,
+              20.77166666666667
+            ],
+            [
+              97.02250000000001,
+              20.778333333333336
+            ],
+            [
+              97.015,
+              20.778333333333336
+            ],
+            [
+              97.015,
+              20.77166666666667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0007",
+        "region": "Taunggyi",
+        "avg_d_kbps": 33900,
+        "avg_u_kbps": 11400,
+        "download_mbps": 33.9,
+        "upload_mbps": 11.4,
+        "latency_ms": 55,
+        "tests_count": 427,
+        "devices_count": 66,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 16.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_8",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.02250000000001,
+              20.77166666666667
+            ],
+            [
+              97.03,
+              20.77166666666667
+            ],
+            [
+              97.03,
+              20.778333333333336
+            ],
+            [
+              97.02250000000001,
+              20.778333333333336
+            ],
+            [
+              97.02250000000001,
+              20.77166666666667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0008",
+        "region": "Taunggyi",
+        "avg_d_kbps": 40000,
+        "avg_u_kbps": 14800,
+        "download_mbps": 40.0,
+        "upload_mbps": 14.8,
+        "latency_ms": 36,
+        "tests_count": 184,
+        "devices_count": 13,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 10.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_9",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.03,
+              20.77166666666667
+            ],
+            [
+              97.0375,
+              20.77166666666667
+            ],
+            [
+              97.0375,
+              20.778333333333336
+            ],
+            [
+              97.03,
+              20.778333333333336
+            ],
+            [
+              97.03,
+              20.77166666666667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0009",
+        "region": "Taunggyi",
+        "avg_d_kbps": 8400,
+        "avg_u_kbps": 9200,
+        "download_mbps": 8.4,
+        "upload_mbps": 9.2,
+        "latency_ms": 20,
+        "tests_count": 158,
+        "devices_count": 66,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 41.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_10",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0375,
+              20.77166666666667
+            ],
+            [
+              97.04499999999999,
+              20.77166666666667
+            ],
+            [
+              97.04499999999999,
+              20.778333333333336
+            ],
+            [
+              97.0375,
+              20.778333333333336
+            ],
+            [
+              97.0375,
+              20.77166666666667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0010",
+        "region": "Taunggyi",
+        "avg_d_kbps": 38800,
+        "avg_u_kbps": 9000,
+        "download_mbps": 38.8,
+        "upload_mbps": 9.0,
+        "latency_ms": 34,
+        "tests_count": 66,
+        "devices_count": 68,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 11.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_11",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.045,
+              20.77166666666667
+            ],
+            [
+              97.05250000000001,
+              20.77166666666667
+            ],
+            [
+              97.05250000000001,
+              20.778333333333336
+            ],
+            [
+              97.045,
+              20.778333333333336
+            ],
+            [
+              97.045,
+              20.77166666666667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0011",
+        "region": "Taunggyi",
+        "avg_d_kbps": 27800,
+        "avg_u_kbps": 12800,
+        "download_mbps": 27.8,
+        "upload_mbps": 12.8,
+        "latency_ms": 26,
+        "tests_count": 443,
+        "devices_count": 177,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 22.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_12",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.05250000000001,
+              20.77166666666667
+            ],
+            [
+              97.06,
+              20.77166666666667
+            ],
+            [
+              97.06,
+              20.778333333333336
+            ],
+            [
+              97.05250000000001,
+              20.778333333333336
+            ],
+            [
+              97.05250000000001,
+              20.77166666666667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0012",
+        "region": "Taunggyi",
+        "avg_d_kbps": 32500,
+        "avg_u_kbps": 15700,
+        "download_mbps": 32.5,
+        "upload_mbps": 15.7,
+        "latency_ms": 53,
+        "tests_count": 561,
+        "devices_count": 13,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 17.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_13",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.015,
+              20.778333333333332
+            ],
+            [
+              97.02250000000001,
+              20.778333333333332
+            ],
+            [
+              97.02250000000001,
+              20.785
+            ],
+            [
+              97.015,
+              20.785
+            ],
+            [
+              97.015,
+              20.778333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0013",
+        "region": "Taunggyi",
+        "avg_d_kbps": 17800,
+        "avg_u_kbps": 17200,
+        "download_mbps": 17.8,
+        "upload_mbps": 17.2,
+        "latency_ms": 37,
+        "tests_count": 335,
+        "devices_count": 13,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 32.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_14",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.02250000000001,
+              20.778333333333332
+            ],
+            [
+              97.03,
+              20.778333333333332
+            ],
+            [
+              97.03,
+              20.785
+            ],
+            [
+              97.02250000000001,
+              20.785
+            ],
+            [
+              97.02250000000001,
+              20.778333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0014",
+        "region": "Taunggyi",
+        "avg_d_kbps": 29400,
+        "avg_u_kbps": 13700,
+        "download_mbps": 29.4,
+        "upload_mbps": 13.7,
+        "latency_ms": 43,
+        "tests_count": 617,
+        "devices_count": 31,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 20.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_15",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.03,
+              20.778333333333332
+            ],
+            [
+              97.0375,
+              20.778333333333332
+            ],
+            [
+              97.0375,
+              20.785
+            ],
+            [
+              97.03,
+              20.785
+            ],
+            [
+              97.03,
+              20.778333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0015",
+        "region": "Taunggyi",
+        "avg_d_kbps": 11500,
+        "avg_u_kbps": 9500,
+        "download_mbps": 11.5,
+        "upload_mbps": 9.5,
+        "latency_ms": 30,
+        "tests_count": 204,
+        "devices_count": 61,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_16",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0375,
+              20.778333333333332
+            ],
+            [
+              97.04499999999999,
+              20.778333333333332
+            ],
+            [
+              97.04499999999999,
+              20.785
+            ],
+            [
+              97.0375,
+              20.785
+            ],
+            [
+              97.0375,
+              20.778333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0016",
+        "region": "Taunggyi",
+        "avg_d_kbps": 29000,
+        "avg_u_kbps": 5800,
+        "download_mbps": 29.0,
+        "upload_mbps": 5.8,
+        "latency_ms": 29,
+        "tests_count": 376,
+        "devices_count": 159,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 21.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_17",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.045,
+              20.778333333333332
+            ],
+            [
+              97.05250000000001,
+              20.778333333333332
+            ],
+            [
+              97.05250000000001,
+              20.785
+            ],
+            [
+              97.045,
+              20.785
+            ],
+            [
+              97.045,
+              20.778333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0017",
+        "region": "Taunggyi",
+        "avg_d_kbps": 24100,
+        "avg_u_kbps": 9700,
+        "download_mbps": 24.1,
+        "upload_mbps": 9.7,
+        "latency_ms": 36,
+        "tests_count": 345,
+        "devices_count": 149,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 25.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_18",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.05250000000001,
+              20.778333333333332
+            ],
+            [
+              97.06,
+              20.778333333333332
+            ],
+            [
+              97.06,
+              20.785
+            ],
+            [
+              97.05250000000001,
+              20.785
+            ],
+            [
+              97.05250000000001,
+              20.778333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0018",
+        "region": "Taunggyi",
+        "avg_d_kbps": 7500,
+        "avg_u_kbps": 7700,
+        "download_mbps": 7.5,
+        "upload_mbps": 7.7,
+        "latency_ms": 52,
+        "tests_count": 376,
+        "devices_count": 145,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 42.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_19",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.015,
+              20.785
+            ],
+            [
+              97.02250000000001,
+              20.785
+            ],
+            [
+              97.02250000000001,
+              20.791666666666668
+            ],
+            [
+              97.015,
+              20.791666666666668
+            ],
+            [
+              97.015,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0019",
+        "region": "Taunggyi",
+        "avg_d_kbps": 1500,
+        "avg_u_kbps": 14800,
+        "download_mbps": 1.5,
+        "upload_mbps": 14.8,
+        "latency_ms": 44,
+        "tests_count": 601,
+        "devices_count": 142,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 48.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_20",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.02250000000001,
+              20.785
+            ],
+            [
+              97.03,
+              20.785
+            ],
+            [
+              97.03,
+              20.791666666666668
+            ],
+            [
+              97.02250000000001,
+              20.791666666666668
+            ],
+            [
+              97.02250000000001,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0020",
+        "region": "Taunggyi",
+        "avg_d_kbps": 5800,
+        "avg_u_kbps": 8200,
+        "download_mbps": 5.8,
+        "upload_mbps": 8.2,
+        "latency_ms": 38,
+        "tests_count": 253,
+        "devices_count": 99,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 44.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_21",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.03,
+              20.785
+            ],
+            [
+              97.0375,
+              20.785
+            ],
+            [
+              97.0375,
+              20.791666666666668
+            ],
+            [
+              97.03,
+              20.791666666666668
+            ],
+            [
+              97.03,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0021",
+        "region": "Taunggyi",
+        "avg_d_kbps": 12600,
+        "avg_u_kbps": 9500,
+        "download_mbps": 12.6,
+        "upload_mbps": 9.5,
+        "latency_ms": 57,
+        "tests_count": 148,
+        "devices_count": 116,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_22",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0375,
+              20.785
+            ],
+            [
+              97.04499999999999,
+              20.785
+            ],
+            [
+              97.04499999999999,
+              20.791666666666668
+            ],
+            [
+              97.0375,
+              20.791666666666668
+            ],
+            [
+              97.0375,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0022",
+        "region": "Taunggyi",
+        "avg_d_kbps": 2800,
+        "avg_u_kbps": 5700,
+        "download_mbps": 2.8,
+        "upload_mbps": 5.7,
+        "latency_ms": 46,
+        "tests_count": 186,
+        "devices_count": 127,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 47.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_23",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.045,
+              20.785
+            ],
+            [
+              97.05250000000001,
+              20.785
+            ],
+            [
+              97.05250000000001,
+              20.791666666666668
+            ],
+            [
+              97.045,
+              20.791666666666668
+            ],
+            [
+              97.045,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0023",
+        "region": "Taunggyi",
+        "avg_d_kbps": 28400,
+        "avg_u_kbps": 4000,
+        "download_mbps": 28.4,
+        "upload_mbps": 4.0,
+        "latency_ms": 33,
+        "tests_count": 577,
+        "devices_count": 99,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 21.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_24",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.05250000000001,
+              20.785
+            ],
+            [
+              97.06,
+              20.785
+            ],
+            [
+              97.06,
+              20.791666666666668
+            ],
+            [
+              97.05250000000001,
+              20.791666666666668
+            ],
+            [
+              97.05250000000001,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0024",
+        "region": "Taunggyi",
+        "avg_d_kbps": 15600,
+        "avg_u_kbps": 4500,
+        "download_mbps": 15.6,
+        "upload_mbps": 4.5,
+        "latency_ms": 31,
+        "tests_count": 313,
+        "devices_count": 64,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 34.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_25",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.015,
+              20.791666666666668
+            ],
+            [
+              97.02250000000001,
+              20.791666666666668
+            ],
+            [
+              97.02250000000001,
+              20.798333333333336
+            ],
+            [
+              97.015,
+              20.798333333333336
+            ],
+            [
+              97.015,
+              20.791666666666668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0025",
+        "region": "Taunggyi",
+        "avg_d_kbps": 2900,
+        "avg_u_kbps": 7100,
+        "download_mbps": 2.9,
+        "upload_mbps": 7.1,
+        "latency_ms": 53,
+        "tests_count": 552,
+        "devices_count": 158,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 47.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_26",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.02250000000001,
+              20.791666666666668
+            ],
+            [
+              97.03,
+              20.791666666666668
+            ],
+            [
+              97.03,
+              20.798333333333336
+            ],
+            [
+              97.02250000000001,
+              20.798333333333336
+            ],
+            [
+              97.02250000000001,
+              20.791666666666668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0026",
+        "region": "Taunggyi",
+        "avg_d_kbps": 27800,
+        "avg_u_kbps": 12400,
+        "download_mbps": 27.8,
+        "upload_mbps": 12.4,
+        "latency_ms": 51,
+        "tests_count": 610,
+        "devices_count": 37,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 22.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_27",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.03,
+              20.791666666666668
+            ],
+            [
+              97.0375,
+              20.791666666666668
+            ],
+            [
+              97.0375,
+              20.798333333333336
+            ],
+            [
+              97.03,
+              20.798333333333336
+            ],
+            [
+              97.03,
+              20.791666666666668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0027",
+        "region": "Taunggyi",
+        "avg_d_kbps": 1500,
+        "avg_u_kbps": 11200,
+        "download_mbps": 1.5,
+        "upload_mbps": 11.2,
+        "latency_ms": 43,
+        "tests_count": 158,
+        "devices_count": 135,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 48.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_28",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0375,
+              20.791666666666668
+            ],
+            [
+              97.04499999999999,
+              20.791666666666668
+            ],
+            [
+              97.04499999999999,
+              20.798333333333336
+            ],
+            [
+              97.0375,
+              20.798333333333336
+            ],
+            [
+              97.0375,
+              20.791666666666668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0028",
+        "region": "Taunggyi",
+        "avg_d_kbps": 33700,
+        "avg_u_kbps": 8700,
+        "download_mbps": 33.7,
+        "upload_mbps": 8.7,
+        "latency_ms": 58,
+        "tests_count": 452,
+        "devices_count": 39,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 16.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_29",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.045,
+              20.791666666666668
+            ],
+            [
+              97.05250000000001,
+              20.791666666666668
+            ],
+            [
+              97.05250000000001,
+              20.798333333333336
+            ],
+            [
+              97.045,
+              20.798333333333336
+            ],
+            [
+              97.045,
+              20.791666666666668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0029",
+        "region": "Taunggyi",
+        "avg_d_kbps": 29900,
+        "avg_u_kbps": 3500,
+        "download_mbps": 29.9,
+        "upload_mbps": 3.5,
+        "latency_ms": 39,
+        "tests_count": 512,
+        "devices_count": 42,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 20.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_30",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.05250000000001,
+              20.791666666666668
+            ],
+            [
+              97.06,
+              20.791666666666668
+            ],
+            [
+              97.06,
+              20.798333333333336
+            ],
+            [
+              97.05250000000001,
+              20.798333333333336
+            ],
+            [
+              97.05250000000001,
+              20.791666666666668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0030",
+        "region": "Taunggyi",
+        "avg_d_kbps": 35400,
+        "avg_u_kbps": 10600,
+        "download_mbps": 35.4,
+        "upload_mbps": 10.6,
+        "latency_ms": 37,
+        "tests_count": 608,
+        "devices_count": 57,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 14.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_31",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.015,
+              20.798333333333332
+            ],
+            [
+              97.02250000000001,
+              20.798333333333332
+            ],
+            [
+              97.02250000000001,
+              20.805
+            ],
+            [
+              97.015,
+              20.805
+            ],
+            [
+              97.015,
+              20.798333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0031",
+        "region": "Taunggyi",
+        "avg_d_kbps": 11300,
+        "avg_u_kbps": 9000,
+        "download_mbps": 11.3,
+        "upload_mbps": 9.0,
+        "latency_ms": 60,
+        "tests_count": 217,
+        "devices_count": 129,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_32",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.02250000000001,
+              20.798333333333332
+            ],
+            [
+              97.03,
+              20.798333333333332
+            ],
+            [
+              97.03,
+              20.805
+            ],
+            [
+              97.02250000000001,
+              20.805
+            ],
+            [
+              97.02250000000001,
+              20.798333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0032",
+        "region": "Taunggyi",
+        "avg_d_kbps": 32600,
+        "avg_u_kbps": 7700,
+        "download_mbps": 32.6,
+        "upload_mbps": 7.7,
+        "latency_ms": 59,
+        "tests_count": 534,
+        "devices_count": 54,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 17.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_33",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.03,
+              20.798333333333332
+            ],
+            [
+              97.0375,
+              20.798333333333332
+            ],
+            [
+              97.0375,
+              20.805
+            ],
+            [
+              97.03,
+              20.805
+            ],
+            [
+              97.03,
+              20.798333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0033",
+        "region": "Taunggyi",
+        "avg_d_kbps": 24600,
+        "avg_u_kbps": 15800,
+        "download_mbps": 24.6,
+        "upload_mbps": 15.8,
+        "latency_ms": 29,
+        "tests_count": 418,
+        "devices_count": 165,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 25.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_34",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0375,
+              20.798333333333332
+            ],
+            [
+              97.04499999999999,
+              20.798333333333332
+            ],
+            [
+              97.04499999999999,
+              20.805
+            ],
+            [
+              97.0375,
+              20.805
+            ],
+            [
+              97.0375,
+              20.798333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0034",
+        "region": "Taunggyi",
+        "avg_d_kbps": 25800,
+        "avg_u_kbps": 7200,
+        "download_mbps": 25.8,
+        "upload_mbps": 7.2,
+        "latency_ms": 33,
+        "tests_count": 522,
+        "devices_count": 22,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 24.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_35",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.045,
+              20.798333333333332
+            ],
+            [
+              97.05250000000001,
+              20.798333333333332
+            ],
+            [
+              97.05250000000001,
+              20.805
+            ],
+            [
+              97.045,
+              20.805
+            ],
+            [
+              97.045,
+              20.798333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0035",
+        "region": "Taunggyi",
+        "avg_d_kbps": 29900,
+        "avg_u_kbps": 13400,
+        "download_mbps": 29.9,
+        "upload_mbps": 13.4,
+        "latency_ms": 48,
+        "tests_count": 331,
+        "devices_count": 70,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 20.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_36",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.05250000000001,
+              20.798333333333332
+            ],
+            [
+              97.06,
+              20.798333333333332
+            ],
+            [
+              97.06,
+              20.805
+            ],
+            [
+              97.05250000000001,
+              20.805
+            ],
+            [
+              97.05250000000001,
+              20.798333333333332
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0036",
+        "region": "Taunggyi",
+        "avg_d_kbps": 31600,
+        "avg_u_kbps": 8300,
+        "download_mbps": 31.6,
+        "upload_mbps": 8.3,
+        "latency_ms": 20,
+        "tests_count": 574,
+        "devices_count": 79,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 18.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_37",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.155,
+              20.785
+            ],
+            [
+              97.16166666666666,
+              20.785
+            ],
+            [
+              97.16166666666666,
+              20.79
+            ],
+            [
+              97.155,
+              20.79
+            ],
+            [
+              97.155,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0037",
+        "region": "Hopong",
+        "avg_d_kbps": 15700,
+        "avg_u_kbps": 6300,
+        "download_mbps": 15.7,
+        "upload_mbps": 6.3,
+        "latency_ms": 46,
+        "tests_count": 535,
+        "devices_count": 162,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 34.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_38",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16166666666666,
+              20.785
+            ],
+            [
+              97.16833333333332,
+              20.785
+            ],
+            [
+              97.16833333333332,
+              20.79
+            ],
+            [
+              97.16166666666666,
+              20.79
+            ],
+            [
+              97.16166666666666,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0038",
+        "region": "Hopong",
+        "avg_d_kbps": 10500,
+        "avg_u_kbps": 5600,
+        "download_mbps": 10.5,
+        "upload_mbps": 5.6,
+        "latency_ms": 72,
+        "tests_count": 260,
+        "devices_count": 58,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_39",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16833333333334,
+              20.785
+            ],
+            [
+              97.175,
+              20.785
+            ],
+            [
+              97.175,
+              20.79
+            ],
+            [
+              97.16833333333334,
+              20.79
+            ],
+            [
+              97.16833333333334,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0039",
+        "region": "Hopong",
+        "avg_d_kbps": 31000,
+        "avg_u_kbps": 9600,
+        "download_mbps": 31.0,
+        "upload_mbps": 9.6,
+        "latency_ms": 54,
+        "tests_count": 53,
+        "devices_count": 108,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 19.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_40",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.175,
+              20.785
+            ],
+            [
+              97.18166666666666,
+              20.785
+            ],
+            [
+              97.18166666666666,
+              20.79
+            ],
+            [
+              97.175,
+              20.79
+            ],
+            [
+              97.175,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0040",
+        "region": "Hopong",
+        "avg_d_kbps": 9600,
+        "avg_u_kbps": 3200,
+        "download_mbps": 9.6,
+        "upload_mbps": 3.2,
+        "latency_ms": 55,
+        "tests_count": 163,
+        "devices_count": 174,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_41",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18166666666666,
+              20.785
+            ],
+            [
+              97.18833333333332,
+              20.785
+            ],
+            [
+              97.18833333333332,
+              20.79
+            ],
+            [
+              97.18166666666666,
+              20.79
+            ],
+            [
+              97.18166666666666,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0041",
+        "region": "Hopong",
+        "avg_d_kbps": 4500,
+        "avg_u_kbps": 8700,
+        "download_mbps": 4.5,
+        "upload_mbps": 8.7,
+        "latency_ms": 72,
+        "tests_count": 316,
+        "devices_count": 94,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 45.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_42",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18833333333333,
+              20.785
+            ],
+            [
+              97.195,
+              20.785
+            ],
+            [
+              97.195,
+              20.79
+            ],
+            [
+              97.18833333333333,
+              20.79
+            ],
+            [
+              97.18833333333333,
+              20.785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0042",
+        "region": "Hopong",
+        "avg_d_kbps": 1500,
+        "avg_u_kbps": 2600,
+        "download_mbps": 1.5,
+        "upload_mbps": 2.6,
+        "latency_ms": 22,
+        "tests_count": 173,
+        "devices_count": 107,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 48.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_43",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.155,
+              20.79
+            ],
+            [
+              97.16166666666666,
+              20.79
+            ],
+            [
+              97.16166666666666,
+              20.794999999999998
+            ],
+            [
+              97.155,
+              20.794999999999998
+            ],
+            [
+              97.155,
+              20.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0043",
+        "region": "Hopong",
+        "avg_d_kbps": 21200,
+        "avg_u_kbps": 10400,
+        "download_mbps": 21.2,
+        "upload_mbps": 10.4,
+        "latency_ms": 72,
+        "tests_count": 479,
+        "devices_count": 150,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 28.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_44",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16166666666666,
+              20.79
+            ],
+            [
+              97.16833333333332,
+              20.79
+            ],
+            [
+              97.16833333333332,
+              20.794999999999998
+            ],
+            [
+              97.16166666666666,
+              20.794999999999998
+            ],
+            [
+              97.16166666666666,
+              20.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0044",
+        "region": "Hopong",
+        "avg_d_kbps": 9700,
+        "avg_u_kbps": 9400,
+        "download_mbps": 9.7,
+        "upload_mbps": 9.4,
+        "latency_ms": 89,
+        "tests_count": 378,
+        "devices_count": 136,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_45",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16833333333334,
+              20.79
+            ],
+            [
+              97.175,
+              20.79
+            ],
+            [
+              97.175,
+              20.794999999999998
+            ],
+            [
+              97.16833333333334,
+              20.794999999999998
+            ],
+            [
+              97.16833333333334,
+              20.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0045",
+        "region": "Hopong",
+        "avg_d_kbps": 13900,
+        "avg_u_kbps": 5700,
+        "download_mbps": 13.9,
+        "upload_mbps": 5.7,
+        "latency_ms": 48,
+        "tests_count": 612,
+        "devices_count": 36,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 36.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_46",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.175,
+              20.79
+            ],
+            [
+              97.18166666666666,
+              20.79
+            ],
+            [
+              97.18166666666666,
+              20.794999999999998
+            ],
+            [
+              97.175,
+              20.794999999999998
+            ],
+            [
+              97.175,
+              20.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0046",
+        "region": "Hopong",
+        "avg_d_kbps": 5100,
+        "avg_u_kbps": 8300,
+        "download_mbps": 5.1,
+        "upload_mbps": 8.3,
+        "latency_ms": 20,
+        "tests_count": 87,
+        "devices_count": 174,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 44.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_47",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18166666666666,
+              20.79
+            ],
+            [
+              97.18833333333332,
+              20.79
+            ],
+            [
+              97.18833333333332,
+              20.794999999999998
+            ],
+            [
+              97.18166666666666,
+              20.794999999999998
+            ],
+            [
+              97.18166666666666,
+              20.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0047",
+        "region": "Hopong",
+        "avg_d_kbps": 10100,
+        "avg_u_kbps": 3000,
+        "download_mbps": 10.1,
+        "upload_mbps": 3.0,
+        "latency_ms": 47,
+        "tests_count": 606,
+        "devices_count": 108,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_48",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18833333333333,
+              20.79
+            ],
+            [
+              97.195,
+              20.79
+            ],
+            [
+              97.195,
+              20.794999999999998
+            ],
+            [
+              97.18833333333333,
+              20.794999999999998
+            ],
+            [
+              97.18833333333333,
+              20.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0048",
+        "region": "Hopong",
+        "avg_d_kbps": 13900,
+        "avg_u_kbps": 4200,
+        "download_mbps": 13.9,
+        "upload_mbps": 4.2,
+        "latency_ms": 66,
+        "tests_count": 50,
+        "devices_count": 82,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 36.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_49",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.155,
+              20.795
+            ],
+            [
+              97.16166666666666,
+              20.795
+            ],
+            [
+              97.16166666666666,
+              20.8
+            ],
+            [
+              97.155,
+              20.8
+            ],
+            [
+              97.155,
+              20.795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0049",
+        "region": "Hopong",
+        "avg_d_kbps": 21300,
+        "avg_u_kbps": 8200,
+        "download_mbps": 21.3,
+        "upload_mbps": 8.2,
+        "latency_ms": 56,
+        "tests_count": 272,
+        "devices_count": 107,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 28.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_50",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16166666666666,
+              20.795
+            ],
+            [
+              97.16833333333332,
+              20.795
+            ],
+            [
+              97.16833333333332,
+              20.8
+            ],
+            [
+              97.16166666666666,
+              20.8
+            ],
+            [
+              97.16166666666666,
+              20.795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0050",
+        "region": "Hopong",
+        "avg_d_kbps": 13300,
+        "avg_u_kbps": 4100,
+        "download_mbps": 13.3,
+        "upload_mbps": 4.1,
+        "latency_ms": 51,
+        "tests_count": 92,
+        "devices_count": 108,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 36.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_51",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16833333333334,
+              20.795
+            ],
+            [
+              97.175,
+              20.795
+            ],
+            [
+              97.175,
+              20.8
+            ],
+            [
+              97.16833333333334,
+              20.8
+            ],
+            [
+              97.16833333333334,
+              20.795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0051",
+        "region": "Hopong",
+        "avg_d_kbps": 20600,
+        "avg_u_kbps": 12500,
+        "download_mbps": 20.6,
+        "upload_mbps": 12.5,
+        "latency_ms": 43,
+        "tests_count": 587,
+        "devices_count": 16,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 29.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_52",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.175,
+              20.795
+            ],
+            [
+              97.18166666666666,
+              20.795
+            ],
+            [
+              97.18166666666666,
+              20.8
+            ],
+            [
+              97.175,
+              20.8
+            ],
+            [
+              97.175,
+              20.795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0052",
+        "region": "Hopong",
+        "avg_d_kbps": 16600,
+        "avg_u_kbps": 4900,
+        "download_mbps": 16.6,
+        "upload_mbps": 4.9,
+        "latency_ms": 30,
+        "tests_count": 407,
+        "devices_count": 27,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 33.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_53",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18166666666666,
+              20.795
+            ],
+            [
+              97.18833333333332,
+              20.795
+            ],
+            [
+              97.18833333333332,
+              20.8
+            ],
+            [
+              97.18166666666666,
+              20.8
+            ],
+            [
+              97.18166666666666,
+              20.795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0053",
+        "region": "Hopong",
+        "avg_d_kbps": 19800,
+        "avg_u_kbps": 5400,
+        "download_mbps": 19.8,
+        "upload_mbps": 5.4,
+        "latency_ms": 72,
+        "tests_count": 306,
+        "devices_count": 93,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 30.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_54",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18833333333333,
+              20.795
+            ],
+            [
+              97.195,
+              20.795
+            ],
+            [
+              97.195,
+              20.8
+            ],
+            [
+              97.18833333333333,
+              20.8
+            ],
+            [
+              97.18833333333333,
+              20.795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0054",
+        "region": "Hopong",
+        "avg_d_kbps": 17100,
+        "avg_u_kbps": 4400,
+        "download_mbps": 17.1,
+        "upload_mbps": 4.4,
+        "latency_ms": 83,
+        "tests_count": 79,
+        "devices_count": 130,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 32.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_55",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.155,
+              20.8
+            ],
+            [
+              97.16166666666666,
+              20.8
+            ],
+            [
+              97.16166666666666,
+              20.805
+            ],
+            [
+              97.155,
+              20.805
+            ],
+            [
+              97.155,
+              20.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0055",
+        "region": "Hopong",
+        "avg_d_kbps": 12800,
+        "avg_u_kbps": 9700,
+        "download_mbps": 12.8,
+        "upload_mbps": 9.7,
+        "latency_ms": 35,
+        "tests_count": 116,
+        "devices_count": 110,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_56",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16166666666666,
+              20.8
+            ],
+            [
+              97.16833333333332,
+              20.8
+            ],
+            [
+              97.16833333333332,
+              20.805
+            ],
+            [
+              97.16166666666666,
+              20.805
+            ],
+            [
+              97.16166666666666,
+              20.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0056",
+        "region": "Hopong",
+        "avg_d_kbps": 6600,
+        "avg_u_kbps": 6000,
+        "download_mbps": 6.6,
+        "upload_mbps": 6.0,
+        "latency_ms": 61,
+        "tests_count": 400,
+        "devices_count": 151,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 43.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_57",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16833333333334,
+              20.8
+            ],
+            [
+              97.175,
+              20.8
+            ],
+            [
+              97.175,
+              20.805
+            ],
+            [
+              97.16833333333334,
+              20.805
+            ],
+            [
+              97.16833333333334,
+              20.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0057",
+        "region": "Hopong",
+        "avg_d_kbps": 15500,
+        "avg_u_kbps": 7800,
+        "download_mbps": 15.5,
+        "upload_mbps": 7.8,
+        "latency_ms": 47,
+        "tests_count": 302,
+        "devices_count": 13,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 34.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_58",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.175,
+              20.8
+            ],
+            [
+              97.18166666666666,
+              20.8
+            ],
+            [
+              97.18166666666666,
+              20.805
+            ],
+            [
+              97.175,
+              20.805
+            ],
+            [
+              97.175,
+              20.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0058",
+        "region": "Hopong",
+        "avg_d_kbps": 1500,
+        "avg_u_kbps": 3200,
+        "download_mbps": 1.5,
+        "upload_mbps": 3.2,
+        "latency_ms": 28,
+        "tests_count": 391,
+        "devices_count": 134,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 48.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_59",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18166666666666,
+              20.8
+            ],
+            [
+              97.18833333333332,
+              20.8
+            ],
+            [
+              97.18833333333332,
+              20.805
+            ],
+            [
+              97.18166666666666,
+              20.805
+            ],
+            [
+              97.18166666666666,
+              20.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0059",
+        "region": "Hopong",
+        "avg_d_kbps": 4100,
+        "avg_u_kbps": 6000,
+        "download_mbps": 4.1,
+        "upload_mbps": 6.0,
+        "latency_ms": 52,
+        "tests_count": 502,
+        "devices_count": 80,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 45.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_60",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18833333333333,
+              20.8
+            ],
+            [
+              97.195,
+              20.8
+            ],
+            [
+              97.195,
+              20.805
+            ],
+            [
+              97.18833333333333,
+              20.805
+            ],
+            [
+              97.18833333333333,
+              20.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0060",
+        "region": "Hopong",
+        "avg_d_kbps": 11200,
+        "avg_u_kbps": 9400,
+        "download_mbps": 11.2,
+        "upload_mbps": 9.4,
+        "latency_ms": 62,
+        "tests_count": 277,
+        "devices_count": 144,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_61",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.155,
+              20.805
+            ],
+            [
+              97.16166666666666,
+              20.805
+            ],
+            [
+              97.16166666666666,
+              20.81
+            ],
+            [
+              97.155,
+              20.81
+            ],
+            [
+              97.155,
+              20.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0061",
+        "region": "Hopong",
+        "avg_d_kbps": 16600,
+        "avg_u_kbps": 11300,
+        "download_mbps": 16.6,
+        "upload_mbps": 11.3,
+        "latency_ms": 53,
+        "tests_count": 457,
+        "devices_count": 108,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 33.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_62",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16166666666666,
+              20.805
+            ],
+            [
+              97.16833333333332,
+              20.805
+            ],
+            [
+              97.16833333333332,
+              20.81
+            ],
+            [
+              97.16166666666666,
+              20.81
+            ],
+            [
+              97.16166666666666,
+              20.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0062",
+        "region": "Hopong",
+        "avg_d_kbps": 2500,
+        "avg_u_kbps": 9500,
+        "download_mbps": 2.5,
+        "upload_mbps": 9.5,
+        "latency_ms": 43,
+        "tests_count": 272,
+        "devices_count": 13,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 47.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_63",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16833333333334,
+              20.805
+            ],
+            [
+              97.175,
+              20.805
+            ],
+            [
+              97.175,
+              20.81
+            ],
+            [
+              97.16833333333334,
+              20.81
+            ],
+            [
+              97.16833333333334,
+              20.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0063",
+        "region": "Hopong",
+        "avg_d_kbps": 28900,
+        "avg_u_kbps": 7200,
+        "download_mbps": 28.9,
+        "upload_mbps": 7.2,
+        "latency_ms": 49,
+        "tests_count": 90,
+        "devices_count": 139,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 21.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_64",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.175,
+              20.805
+            ],
+            [
+              97.18166666666666,
+              20.805
+            ],
+            [
+              97.18166666666666,
+              20.81
+            ],
+            [
+              97.175,
+              20.81
+            ],
+            [
+              97.175,
+              20.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0064",
+        "region": "Hopong",
+        "avg_d_kbps": 15500,
+        "avg_u_kbps": 4200,
+        "download_mbps": 15.5,
+        "upload_mbps": 4.2,
+        "latency_ms": 56,
+        "tests_count": 46,
+        "devices_count": 135,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 34.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_65",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18166666666666,
+              20.805
+            ],
+            [
+              97.18833333333332,
+              20.805
+            ],
+            [
+              97.18833333333332,
+              20.81
+            ],
+            [
+              97.18166666666666,
+              20.81
+            ],
+            [
+              97.18166666666666,
+              20.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0065",
+        "region": "Hopong",
+        "avg_d_kbps": 8500,
+        "avg_u_kbps": 7900,
+        "download_mbps": 8.5,
+        "upload_mbps": 7.9,
+        "latency_ms": 73,
+        "tests_count": 233,
+        "devices_count": 145,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 41.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_66",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18833333333333,
+              20.805
+            ],
+            [
+              97.195,
+              20.805
+            ],
+            [
+              97.195,
+              20.81
+            ],
+            [
+              97.18833333333333,
+              20.81
+            ],
+            [
+              97.18833333333333,
+              20.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0066",
+        "region": "Hopong",
+        "avg_d_kbps": 10600,
+        "avg_u_kbps": 7600,
+        "download_mbps": 10.6,
+        "upload_mbps": 7.6,
+        "latency_ms": 50,
+        "tests_count": 106,
+        "devices_count": 111,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_67",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.155,
+              20.810000000000002
+            ],
+            [
+              97.16166666666666,
+              20.810000000000002
+            ],
+            [
+              97.16166666666666,
+              20.815
+            ],
+            [
+              97.155,
+              20.815
+            ],
+            [
+              97.155,
+              20.810000000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0067",
+        "region": "Hopong",
+        "avg_d_kbps": 16700,
+        "avg_u_kbps": 9100,
+        "download_mbps": 16.7,
+        "upload_mbps": 9.1,
+        "latency_ms": 72,
+        "tests_count": 217,
+        "devices_count": 70,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 33.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_68",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16166666666666,
+              20.810000000000002
+            ],
+            [
+              97.16833333333332,
+              20.810000000000002
+            ],
+            [
+              97.16833333333332,
+              20.815
+            ],
+            [
+              97.16166666666666,
+              20.815
+            ],
+            [
+              97.16166666666666,
+              20.810000000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0068",
+        "region": "Hopong",
+        "avg_d_kbps": 4000,
+        "avg_u_kbps": 3900,
+        "download_mbps": 4.0,
+        "upload_mbps": 3.9,
+        "latency_ms": 52,
+        "tests_count": 503,
+        "devices_count": 162,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 46.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_69",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.16833333333334,
+              20.810000000000002
+            ],
+            [
+              97.175,
+              20.810000000000002
+            ],
+            [
+              97.175,
+              20.815
+            ],
+            [
+              97.16833333333334,
+              20.815
+            ],
+            [
+              97.16833333333334,
+              20.810000000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0069",
+        "region": "Hopong",
+        "avg_d_kbps": 11100,
+        "avg_u_kbps": 7500,
+        "download_mbps": 11.1,
+        "upload_mbps": 7.5,
+        "latency_ms": 20,
+        "tests_count": 298,
+        "devices_count": 82,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_70",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.175,
+              20.810000000000002
+            ],
+            [
+              97.18166666666666,
+              20.810000000000002
+            ],
+            [
+              97.18166666666666,
+              20.815
+            ],
+            [
+              97.175,
+              20.815
+            ],
+            [
+              97.175,
+              20.810000000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0070",
+        "region": "Hopong",
+        "avg_d_kbps": 19000,
+        "avg_u_kbps": 6000,
+        "download_mbps": 19.0,
+        "upload_mbps": 6.0,
+        "latency_ms": 51,
+        "tests_count": 116,
+        "devices_count": 155,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_71",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18166666666666,
+              20.810000000000002
+            ],
+            [
+              97.18833333333332,
+              20.810000000000002
+            ],
+            [
+              97.18833333333332,
+              20.815
+            ],
+            [
+              97.18166666666666,
+              20.815
+            ],
+            [
+              97.18166666666666,
+              20.810000000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0071",
+        "region": "Hopong",
+        "avg_d_kbps": 10500,
+        "avg_u_kbps": 7400,
+        "download_mbps": 10.5,
+        "upload_mbps": 7.4,
+        "latency_ms": 73,
+        "tests_count": 56,
+        "devices_count": 160,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_72",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.18833333333333,
+              20.810000000000002
+            ],
+            [
+              97.195,
+              20.810000000000002
+            ],
+            [
+              97.195,
+              20.815
+            ],
+            [
+              97.18833333333333,
+              20.815
+            ],
+            [
+              97.18833333333333,
+              20.810000000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0072",
+        "region": "Hopong",
+        "avg_d_kbps": 10400,
+        "avg_u_kbps": 10400,
+        "download_mbps": 10.4,
+        "upload_mbps": 10.4,
+        "latency_ms": 21,
+        "tests_count": 433,
+        "devices_count": 170,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_73",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.915,
+              20.645
+            ],
+            [
+              96.92166666666667,
+              20.645
+            ],
+            [
+              96.92166666666667,
+              20.6505
+            ],
+            [
+              96.915,
+              20.6505
+            ],
+            [
+              96.915,
+              20.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0073",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 16400,
+        "avg_u_kbps": 3900,
+        "download_mbps": 16.4,
+        "upload_mbps": 3.9,
+        "latency_ms": 46,
+        "tests_count": 128,
+        "devices_count": 39,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 33.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_74",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92166666666667,
+              20.645
+            ],
+            [
+              96.92833333333333,
+              20.645
+            ],
+            [
+              96.92833333333333,
+              20.6505
+            ],
+            [
+              96.92166666666667,
+              20.6505
+            ],
+            [
+              96.92166666666667,
+              20.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0074",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 6800,
+        "avg_u_kbps": 13100,
+        "download_mbps": 6.8,
+        "upload_mbps": 13.1,
+        "latency_ms": 54,
+        "tests_count": 580,
+        "devices_count": 26,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 43.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_75",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92833333333334,
+              20.645
+            ],
+            [
+              96.935,
+              20.645
+            ],
+            [
+              96.935,
+              20.6505
+            ],
+            [
+              96.92833333333334,
+              20.6505
+            ],
+            [
+              96.92833333333334,
+              20.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0075",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 21500,
+        "avg_u_kbps": 5200,
+        "download_mbps": 21.5,
+        "upload_mbps": 5.2,
+        "latency_ms": 55,
+        "tests_count": 551,
+        "devices_count": 75,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 28.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_76",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.935,
+              20.645
+            ],
+            [
+              96.94166666666666,
+              20.645
+            ],
+            [
+              96.94166666666666,
+              20.6505
+            ],
+            [
+              96.935,
+              20.6505
+            ],
+            [
+              96.935,
+              20.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0076",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 23400,
+        "avg_u_kbps": 5400,
+        "download_mbps": 23.4,
+        "upload_mbps": 5.4,
+        "latency_ms": 40,
+        "tests_count": 231,
+        "devices_count": 64,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 26.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_77",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94166666666666,
+              20.645
+            ],
+            [
+              96.94833333333332,
+              20.645
+            ],
+            [
+              96.94833333333332,
+              20.6505
+            ],
+            [
+              96.94166666666666,
+              20.6505
+            ],
+            [
+              96.94166666666666,
+              20.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0077",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 22200,
+        "avg_u_kbps": 5300,
+        "download_mbps": 22.2,
+        "upload_mbps": 5.3,
+        "latency_ms": 67,
+        "tests_count": 103,
+        "devices_count": 42,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 27.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_78",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94833333333334,
+              20.645
+            ],
+            [
+              96.955,
+              20.645
+            ],
+            [
+              96.955,
+              20.6505
+            ],
+            [
+              96.94833333333334,
+              20.6505
+            ],
+            [
+              96.94833333333334,
+              20.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0078",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 7500,
+        "avg_u_kbps": 7600,
+        "download_mbps": 7.5,
+        "upload_mbps": 7.6,
+        "latency_ms": 47,
+        "tests_count": 601,
+        "devices_count": 120,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 42.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_79",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.915,
+              20.6505
+            ],
+            [
+              96.92166666666667,
+              20.6505
+            ],
+            [
+              96.92166666666667,
+              20.656000000000002
+            ],
+            [
+              96.915,
+              20.656000000000002
+            ],
+            [
+              96.915,
+              20.6505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0079",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 10900,
+        "avg_u_kbps": 3800,
+        "download_mbps": 10.9,
+        "upload_mbps": 3.8,
+        "latency_ms": 66,
+        "tests_count": 249,
+        "devices_count": 88,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_80",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92166666666667,
+              20.6505
+            ],
+            [
+              96.92833333333333,
+              20.6505
+            ],
+            [
+              96.92833333333333,
+              20.656000000000002
+            ],
+            [
+              96.92166666666667,
+              20.656000000000002
+            ],
+            [
+              96.92166666666667,
+              20.6505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0080",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 31500,
+        "avg_u_kbps": 2900,
+        "download_mbps": 31.5,
+        "upload_mbps": 2.9,
+        "latency_ms": 62,
+        "tests_count": 421,
+        "devices_count": 79,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 18.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_81",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92833333333334,
+              20.6505
+            ],
+            [
+              96.935,
+              20.6505
+            ],
+            [
+              96.935,
+              20.656000000000002
+            ],
+            [
+              96.92833333333334,
+              20.656000000000002
+            ],
+            [
+              96.92833333333334,
+              20.6505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0081",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 22200,
+        "avg_u_kbps": 2600,
+        "download_mbps": 22.2,
+        "upload_mbps": 2.6,
+        "latency_ms": 20,
+        "tests_count": 81,
+        "devices_count": 173,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 27.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_82",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.935,
+              20.6505
+            ],
+            [
+              96.94166666666666,
+              20.6505
+            ],
+            [
+              96.94166666666666,
+              20.656000000000002
+            ],
+            [
+              96.935,
+              20.656000000000002
+            ],
+            [
+              96.935,
+              20.6505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0082",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 20400,
+        "avg_u_kbps": 6000,
+        "download_mbps": 20.4,
+        "upload_mbps": 6.0,
+        "latency_ms": 65,
+        "tests_count": 332,
+        "devices_count": 48,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 29.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_83",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94166666666666,
+              20.6505
+            ],
+            [
+              96.94833333333332,
+              20.6505
+            ],
+            [
+              96.94833333333332,
+              20.656000000000002
+            ],
+            [
+              96.94166666666666,
+              20.656000000000002
+            ],
+            [
+              96.94166666666666,
+              20.6505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0083",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 38800,
+        "avg_u_kbps": 7600,
+        "download_mbps": 38.8,
+        "upload_mbps": 7.6,
+        "latency_ms": 42,
+        "tests_count": 601,
+        "devices_count": 145,
+        "coverage_tier": "Excellent (5G Capable)",
+        "color": "#00ff88",
+        "speed_gap": 11.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_84",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94833333333334,
+              20.6505
+            ],
+            [
+              96.955,
+              20.6505
+            ],
+            [
+              96.955,
+              20.656000000000002
+            ],
+            [
+              96.94833333333334,
+              20.656000000000002
+            ],
+            [
+              96.94833333333334,
+              20.6505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0084",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 14900,
+        "avg_u_kbps": 1100,
+        "download_mbps": 14.9,
+        "upload_mbps": 1.1,
+        "latency_ms": 60,
+        "tests_count": 339,
+        "devices_count": 112,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 35.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_85",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.915,
+              20.656
+            ],
+            [
+              96.92166666666667,
+              20.656
+            ],
+            [
+              96.92166666666667,
+              20.6615
+            ],
+            [
+              96.915,
+              20.6615
+            ],
+            [
+              96.915,
+              20.656
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0085",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 12300,
+        "avg_u_kbps": 7100,
+        "download_mbps": 12.3,
+        "upload_mbps": 7.1,
+        "latency_ms": 76,
+        "tests_count": 109,
+        "devices_count": 30,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_86",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92166666666667,
+              20.656
+            ],
+            [
+              96.92833333333333,
+              20.656
+            ],
+            [
+              96.92833333333333,
+              20.6615
+            ],
+            [
+              96.92166666666667,
+              20.6615
+            ],
+            [
+              96.92166666666667,
+              20.656
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0086",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 7100,
+        "avg_u_kbps": 2600,
+        "download_mbps": 7.1,
+        "upload_mbps": 2.6,
+        "latency_ms": 47,
+        "tests_count": 269,
+        "devices_count": 86,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 42.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_87",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92833333333334,
+              20.656
+            ],
+            [
+              96.935,
+              20.656
+            ],
+            [
+              96.935,
+              20.6615
+            ],
+            [
+              96.92833333333334,
+              20.6615
+            ],
+            [
+              96.92833333333334,
+              20.656
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0087",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 17200,
+        "avg_u_kbps": 8300,
+        "download_mbps": 17.2,
+        "upload_mbps": 8.3,
+        "latency_ms": 32,
+        "tests_count": 540,
+        "devices_count": 50,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 32.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_88",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.935,
+              20.656
+            ],
+            [
+              96.94166666666666,
+              20.656
+            ],
+            [
+              96.94166666666666,
+              20.6615
+            ],
+            [
+              96.935,
+              20.6615
+            ],
+            [
+              96.935,
+              20.656
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0088",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 19100,
+        "avg_u_kbps": 11300,
+        "download_mbps": 19.1,
+        "upload_mbps": 11.3,
+        "latency_ms": 34,
+        "tests_count": 93,
+        "devices_count": 128,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 30.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_89",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94166666666666,
+              20.656
+            ],
+            [
+              96.94833333333332,
+              20.656
+            ],
+            [
+              96.94833333333332,
+              20.6615
+            ],
+            [
+              96.94166666666666,
+              20.6615
+            ],
+            [
+              96.94166666666666,
+              20.656
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0089",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 14100,
+        "avg_u_kbps": 7700,
+        "download_mbps": 14.1,
+        "upload_mbps": 7.7,
+        "latency_ms": 42,
+        "tests_count": 565,
+        "devices_count": 50,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 35.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_90",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94833333333334,
+              20.656
+            ],
+            [
+              96.955,
+              20.656
+            ],
+            [
+              96.955,
+              20.6615
+            ],
+            [
+              96.94833333333334,
+              20.6615
+            ],
+            [
+              96.94833333333334,
+              20.656
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0090",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 11900,
+        "avg_u_kbps": 7700,
+        "download_mbps": 11.9,
+        "upload_mbps": 7.7,
+        "latency_ms": 40,
+        "tests_count": 366,
+        "devices_count": 43,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_91",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.915,
+              20.6615
+            ],
+            [
+              96.92166666666667,
+              20.6615
+            ],
+            [
+              96.92166666666667,
+              20.667
+            ],
+            [
+              96.915,
+              20.667
+            ],
+            [
+              96.915,
+              20.6615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0091",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 13000,
+        "avg_u_kbps": 11300,
+        "download_mbps": 13.0,
+        "upload_mbps": 11.3,
+        "latency_ms": 43,
+        "tests_count": 166,
+        "devices_count": 28,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_92",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92166666666667,
+              20.6615
+            ],
+            [
+              96.92833333333333,
+              20.6615
+            ],
+            [
+              96.92833333333333,
+              20.667
+            ],
+            [
+              96.92166666666667,
+              20.667
+            ],
+            [
+              96.92166666666667,
+              20.6615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0092",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 12200,
+        "avg_u_kbps": 5100,
+        "download_mbps": 12.2,
+        "upload_mbps": 5.1,
+        "latency_ms": 45,
+        "tests_count": 200,
+        "devices_count": 61,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_93",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92833333333334,
+              20.6615
+            ],
+            [
+              96.935,
+              20.6615
+            ],
+            [
+              96.935,
+              20.667
+            ],
+            [
+              96.92833333333334,
+              20.667
+            ],
+            [
+              96.92833333333334,
+              20.6615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0093",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 16500,
+        "avg_u_kbps": 12900,
+        "download_mbps": 16.5,
+        "upload_mbps": 12.9,
+        "latency_ms": 24,
+        "tests_count": 194,
+        "devices_count": 48,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 33.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_94",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.935,
+              20.6615
+            ],
+            [
+              96.94166666666666,
+              20.6615
+            ],
+            [
+              96.94166666666666,
+              20.667
+            ],
+            [
+              96.935,
+              20.667
+            ],
+            [
+              96.935,
+              20.6615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0094",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 21500,
+        "avg_u_kbps": 8400,
+        "download_mbps": 21.5,
+        "upload_mbps": 8.4,
+        "latency_ms": 72,
+        "tests_count": 73,
+        "devices_count": 17,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 28.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_95",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94166666666666,
+              20.6615
+            ],
+            [
+              96.94833333333332,
+              20.6615
+            ],
+            [
+              96.94833333333332,
+              20.667
+            ],
+            [
+              96.94166666666666,
+              20.667
+            ],
+            [
+              96.94166666666666,
+              20.6615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0095",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 22600,
+        "avg_u_kbps": 5500,
+        "download_mbps": 22.6,
+        "upload_mbps": 5.5,
+        "latency_ms": 59,
+        "tests_count": 316,
+        "devices_count": 94,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 27.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_96",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94833333333334,
+              20.6615
+            ],
+            [
+              96.955,
+              20.6615
+            ],
+            [
+              96.955,
+              20.667
+            ],
+            [
+              96.94833333333334,
+              20.667
+            ],
+            [
+              96.94833333333334,
+              20.6615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0096",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 18600,
+        "avg_u_kbps": 7500,
+        "download_mbps": 18.6,
+        "upload_mbps": 7.5,
+        "latency_ms": 71,
+        "tests_count": 391,
+        "devices_count": 15,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_97",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.915,
+              20.667
+            ],
+            [
+              96.92166666666667,
+              20.667
+            ],
+            [
+              96.92166666666667,
+              20.672500000000003
+            ],
+            [
+              96.915,
+              20.672500000000003
+            ],
+            [
+              96.915,
+              20.667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0097",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 19800,
+        "avg_u_kbps": 10300,
+        "download_mbps": 19.8,
+        "upload_mbps": 10.3,
+        "latency_ms": 60,
+        "tests_count": 395,
+        "devices_count": 121,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 30.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_98",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92166666666667,
+              20.667
+            ],
+            [
+              96.92833333333333,
+              20.667
+            ],
+            [
+              96.92833333333333,
+              20.672500000000003
+            ],
+            [
+              96.92166666666667,
+              20.672500000000003
+            ],
+            [
+              96.92166666666667,
+              20.667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0098",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 6900,
+        "avg_u_kbps": 7500,
+        "download_mbps": 6.9,
+        "upload_mbps": 7.5,
+        "latency_ms": 30,
+        "tests_count": 171,
+        "devices_count": 173,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 43.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_99",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92833333333334,
+              20.667
+            ],
+            [
+              96.935,
+              20.667
+            ],
+            [
+              96.935,
+              20.672500000000003
+            ],
+            [
+              96.92833333333334,
+              20.672500000000003
+            ],
+            [
+              96.92833333333334,
+              20.667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0099",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 18500,
+        "avg_u_kbps": 9600,
+        "download_mbps": 18.5,
+        "upload_mbps": 9.6,
+        "latency_ms": 35,
+        "tests_count": 516,
+        "devices_count": 101,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_100",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.935,
+              20.667
+            ],
+            [
+              96.94166666666666,
+              20.667
+            ],
+            [
+              96.94166666666666,
+              20.672500000000003
+            ],
+            [
+              96.935,
+              20.672500000000003
+            ],
+            [
+              96.935,
+              20.667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0100",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 22000,
+        "avg_u_kbps": 9400,
+        "download_mbps": 22.0,
+        "upload_mbps": 9.4,
+        "latency_ms": 50,
+        "tests_count": 563,
+        "devices_count": 70,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 28.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_101",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94166666666666,
+              20.667
+            ],
+            [
+              96.94833333333332,
+              20.667
+            ],
+            [
+              96.94833333333332,
+              20.672500000000003
+            ],
+            [
+              96.94166666666666,
+              20.672500000000003
+            ],
+            [
+              96.94166666666666,
+              20.667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0101",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 16700,
+        "avg_u_kbps": 8700,
+        "download_mbps": 16.7,
+        "upload_mbps": 8.7,
+        "latency_ms": 30,
+        "tests_count": 449,
+        "devices_count": 72,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 33.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_102",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94833333333334,
+              20.667
+            ],
+            [
+              96.955,
+              20.667
+            ],
+            [
+              96.955,
+              20.672500000000003
+            ],
+            [
+              96.94833333333334,
+              20.672500000000003
+            ],
+            [
+              96.94833333333334,
+              20.667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0102",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 15200,
+        "avg_u_kbps": 8400,
+        "download_mbps": 15.2,
+        "upload_mbps": 8.4,
+        "latency_ms": 37,
+        "tests_count": 64,
+        "devices_count": 149,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 34.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_103",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.915,
+              20.6725
+            ],
+            [
+              96.92166666666667,
+              20.6725
+            ],
+            [
+              96.92166666666667,
+              20.678
+            ],
+            [
+              96.915,
+              20.678
+            ],
+            [
+              96.915,
+              20.6725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0103",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 5000,
+        "avg_u_kbps": 9400,
+        "download_mbps": 5.0,
+        "upload_mbps": 9.4,
+        "latency_ms": 40,
+        "tests_count": 562,
+        "devices_count": 100,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 45.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_104",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92166666666667,
+              20.6725
+            ],
+            [
+              96.92833333333333,
+              20.6725
+            ],
+            [
+              96.92833333333333,
+              20.678
+            ],
+            [
+              96.92166666666667,
+              20.678
+            ],
+            [
+              96.92166666666667,
+              20.6725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0104",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 18700,
+        "avg_u_kbps": 2500,
+        "download_mbps": 18.7,
+        "upload_mbps": 2.5,
+        "latency_ms": 42,
+        "tests_count": 74,
+        "devices_count": 159,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_105",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92833333333334,
+              20.6725
+            ],
+            [
+              96.935,
+              20.6725
+            ],
+            [
+              96.935,
+              20.678
+            ],
+            [
+              96.92833333333334,
+              20.678
+            ],
+            [
+              96.92833333333334,
+              20.6725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0105",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 1800,
+        "avg_u_kbps": 8800,
+        "download_mbps": 1.8,
+        "upload_mbps": 8.8,
+        "latency_ms": 58,
+        "tests_count": 557,
+        "devices_count": 13,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 48.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_106",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.935,
+              20.6725
+            ],
+            [
+              96.94166666666666,
+              20.6725
+            ],
+            [
+              96.94166666666666,
+              20.678
+            ],
+            [
+              96.935,
+              20.678
+            ],
+            [
+              96.935,
+              20.6725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0106",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 20800,
+        "avg_u_kbps": 4100,
+        "download_mbps": 20.8,
+        "upload_mbps": 4.1,
+        "latency_ms": 38,
+        "tests_count": 520,
+        "devices_count": 127,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 29.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_107",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94166666666666,
+              20.6725
+            ],
+            [
+              96.94833333333332,
+              20.6725
+            ],
+            [
+              96.94833333333332,
+              20.678
+            ],
+            [
+              96.94166666666666,
+              20.678
+            ],
+            [
+              96.94166666666666,
+              20.6725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0107",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 8800,
+        "avg_u_kbps": 7400,
+        "download_mbps": 8.8,
+        "upload_mbps": 7.4,
+        "latency_ms": 28,
+        "tests_count": 338,
+        "devices_count": 97,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 41.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_108",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.94833333333334,
+              20.6725
+            ],
+            [
+              96.955,
+              20.6725
+            ],
+            [
+              96.955,
+              20.678
+            ],
+            [
+              96.94833333333334,
+              20.678
+            ],
+            [
+              96.94833333333334,
+              20.6725
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0108",
+        "region": "Nyaungshwe",
+        "avg_d_kbps": 27800,
+        "avg_u_kbps": 5900,
+        "download_mbps": 27.8,
+        "upload_mbps": 5.9,
+        "latency_ms": 49,
+        "tests_count": 388,
+        "devices_count": 80,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 22.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_109",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89,
+              20.52
+            ],
+            [
+              96.89833333333334,
+              20.52
+            ],
+            [
+              96.89833333333334,
+              20.53
+            ],
+            [
+              96.89,
+              20.53
+            ],
+            [
+              96.89,
+              20.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0109",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 10000,
+        "avg_u_kbps": 800,
+        "download_mbps": 10.0,
+        "upload_mbps": 0.8,
+        "latency_ms": 68,
+        "tests_count": 525,
+        "devices_count": 79,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_110",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89833333333334,
+              20.52
+            ],
+            [
+              96.90666666666667,
+              20.52
+            ],
+            [
+              96.90666666666667,
+              20.53
+            ],
+            [
+              96.89833333333334,
+              20.53
+            ],
+            [
+              96.89833333333334,
+              20.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0110",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 7900,
+        "avg_u_kbps": 3500,
+        "download_mbps": 7.9,
+        "upload_mbps": 3.5,
+        "latency_ms": 86,
+        "tests_count": 550,
+        "devices_count": 86,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 42.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_111",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.90666666666667,
+              20.52
+            ],
+            [
+              96.91499999999999,
+              20.52
+            ],
+            [
+              96.91499999999999,
+              20.53
+            ],
+            [
+              96.90666666666667,
+              20.53
+            ],
+            [
+              96.90666666666667,
+              20.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0111",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 12200,
+        "avg_u_kbps": 1700,
+        "download_mbps": 12.2,
+        "upload_mbps": 1.7,
+        "latency_ms": 37,
+        "tests_count": 396,
+        "devices_count": 136,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_112",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.91499999999999,
+              20.52
+            ],
+            [
+              96.92333333333332,
+              20.52
+            ],
+            [
+              96.92333333333332,
+              20.53
+            ],
+            [
+              96.91499999999999,
+              20.53
+            ],
+            [
+              96.91499999999999,
+              20.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0112",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 3300,
+        "avg_u_kbps": 3100,
+        "download_mbps": 3.3,
+        "upload_mbps": 3.1,
+        "latency_ms": 76,
+        "tests_count": 514,
+        "devices_count": 90,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 46.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_113",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92333333333333,
+              20.52
+            ],
+            [
+              96.93166666666667,
+              20.52
+            ],
+            [
+              96.93166666666667,
+              20.53
+            ],
+            [
+              96.92333333333333,
+              20.53
+            ],
+            [
+              96.92333333333333,
+              20.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0113",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 9200,
+        "avg_u_kbps": 5100,
+        "download_mbps": 9.2,
+        "upload_mbps": 5.1,
+        "latency_ms": 84,
+        "tests_count": 615,
+        "devices_count": 129,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_114",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.93166666666667,
+              20.52
+            ],
+            [
+              96.94,
+              20.52
+            ],
+            [
+              96.94,
+              20.53
+            ],
+            [
+              96.93166666666667,
+              20.53
+            ],
+            [
+              96.93166666666667,
+              20.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0114",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 3200,
+        "avg_u_kbps": 4300,
+        "download_mbps": 3.2,
+        "upload_mbps": 4.3,
+        "latency_ms": 106,
+        "tests_count": 320,
+        "devices_count": 161,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 46.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_115",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89,
+              20.53
+            ],
+            [
+              96.89833333333334,
+              20.53
+            ],
+            [
+              96.89833333333334,
+              20.54
+            ],
+            [
+              96.89,
+              20.54
+            ],
+            [
+              96.89,
+              20.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0115",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 11700,
+        "avg_u_kbps": 3500,
+        "download_mbps": 11.7,
+        "upload_mbps": 3.5,
+        "latency_ms": 52,
+        "tests_count": 504,
+        "devices_count": 87,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_116",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89833333333334,
+              20.53
+            ],
+            [
+              96.90666666666667,
+              20.53
+            ],
+            [
+              96.90666666666667,
+              20.54
+            ],
+            [
+              96.89833333333334,
+              20.54
+            ],
+            [
+              96.89833333333334,
+              20.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0116",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 11400,
+        "avg_u_kbps": 3600,
+        "download_mbps": 11.4,
+        "upload_mbps": 3.6,
+        "latency_ms": 116,
+        "tests_count": 260,
+        "devices_count": 99,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_117",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.90666666666667,
+              20.53
+            ],
+            [
+              96.91499999999999,
+              20.53
+            ],
+            [
+              96.91499999999999,
+              20.54
+            ],
+            [
+              96.90666666666667,
+              20.54
+            ],
+            [
+              96.90666666666667,
+              20.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0117",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 10900,
+        "avg_u_kbps": 3200,
+        "download_mbps": 10.9,
+        "upload_mbps": 3.2,
+        "latency_ms": 56,
+        "tests_count": 566,
+        "devices_count": 108,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_118",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.91499999999999,
+              20.53
+            ],
+            [
+              96.92333333333332,
+              20.53
+            ],
+            [
+              96.92333333333332,
+              20.54
+            ],
+            [
+              96.91499999999999,
+              20.54
+            ],
+            [
+              96.91499999999999,
+              20.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0118",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 12900,
+        "avg_u_kbps": 6600,
+        "download_mbps": 12.9,
+        "upload_mbps": 6.6,
+        "latency_ms": 106,
+        "tests_count": 151,
+        "devices_count": 121,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_119",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92333333333333,
+              20.53
+            ],
+            [
+              96.93166666666667,
+              20.53
+            ],
+            [
+              96.93166666666667,
+              20.54
+            ],
+            [
+              96.92333333333333,
+              20.54
+            ],
+            [
+              96.92333333333333,
+              20.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0119",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 18700,
+        "avg_u_kbps": 3600,
+        "download_mbps": 18.7,
+        "upload_mbps": 3.6,
+        "latency_ms": 68,
+        "tests_count": 126,
+        "devices_count": 135,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 31.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_120",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.93166666666667,
+              20.53
+            ],
+            [
+              96.94,
+              20.53
+            ],
+            [
+              96.94,
+              20.54
+            ],
+            [
+              96.93166666666667,
+              20.54
+            ],
+            [
+              96.93166666666667,
+              20.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0120",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 9700,
+        "avg_u_kbps": 7400,
+        "download_mbps": 9.7,
+        "upload_mbps": 7.4,
+        "latency_ms": 68,
+        "tests_count": 220,
+        "devices_count": 101,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_121",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89,
+              20.54
+            ],
+            [
+              96.89833333333334,
+              20.54
+            ],
+            [
+              96.89833333333334,
+              20.549999999999997
+            ],
+            [
+              96.89,
+              20.549999999999997
+            ],
+            [
+              96.89,
+              20.54
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0121",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 14300,
+        "avg_u_kbps": 6700,
+        "download_mbps": 14.3,
+        "upload_mbps": 6.7,
+        "latency_ms": 115,
+        "tests_count": 181,
+        "devices_count": 148,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 35.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_122",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89833333333334,
+              20.54
+            ],
+            [
+              96.90666666666667,
+              20.54
+            ],
+            [
+              96.90666666666667,
+              20.549999999999997
+            ],
+            [
+              96.89833333333334,
+              20.549999999999997
+            ],
+            [
+              96.89833333333334,
+              20.54
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0122",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 11200,
+        "avg_u_kbps": 4900,
+        "download_mbps": 11.2,
+        "upload_mbps": 4.9,
+        "latency_ms": 82,
+        "tests_count": 537,
+        "devices_count": 89,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_123",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.90666666666667,
+              20.54
+            ],
+            [
+              96.91499999999999,
+              20.54
+            ],
+            [
+              96.91499999999999,
+              20.549999999999997
+            ],
+            [
+              96.90666666666667,
+              20.549999999999997
+            ],
+            [
+              96.90666666666667,
+              20.54
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0123",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 1500,
+        "avg_u_kbps": 5800,
+        "download_mbps": 1.5,
+        "upload_mbps": 5.8,
+        "latency_ms": 43,
+        "tests_count": 299,
+        "devices_count": 73,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 48.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_124",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.91499999999999,
+              20.54
+            ],
+            [
+              96.92333333333332,
+              20.54
+            ],
+            [
+              96.92333333333332,
+              20.549999999999997
+            ],
+            [
+              96.91499999999999,
+              20.549999999999997
+            ],
+            [
+              96.91499999999999,
+              20.54
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0124",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 5000,
+        "avg_u_kbps": 1600,
+        "download_mbps": 5.0,
+        "upload_mbps": 1.6,
+        "latency_ms": 101,
+        "tests_count": 476,
+        "devices_count": 44,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 45.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_125",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92333333333333,
+              20.54
+            ],
+            [
+              96.93166666666667,
+              20.54
+            ],
+            [
+              96.93166666666667,
+              20.549999999999997
+            ],
+            [
+              96.92333333333333,
+              20.549999999999997
+            ],
+            [
+              96.92333333333333,
+              20.54
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0125",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 5400,
+        "avg_u_kbps": 5100,
+        "download_mbps": 5.4,
+        "upload_mbps": 5.1,
+        "latency_ms": 45,
+        "tests_count": 123,
+        "devices_count": 157,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 44.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_126",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.93166666666667,
+              20.54
+            ],
+            [
+              96.94,
+              20.54
+            ],
+            [
+              96.94,
+              20.549999999999997
+            ],
+            [
+              96.93166666666667,
+              20.549999999999997
+            ],
+            [
+              96.93166666666667,
+              20.54
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0126",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 9400,
+        "avg_u_kbps": 6500,
+        "download_mbps": 9.4,
+        "upload_mbps": 6.5,
+        "latency_ms": 73,
+        "tests_count": 55,
+        "devices_count": 29,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_127",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89,
+              20.549999999999997
+            ],
+            [
+              96.89833333333334,
+              20.549999999999997
+            ],
+            [
+              96.89833333333334,
+              20.559999999999995
+            ],
+            [
+              96.89,
+              20.559999999999995
+            ],
+            [
+              96.89,
+              20.549999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0127",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 7000,
+        "avg_u_kbps": 4100,
+        "download_mbps": 7.0,
+        "upload_mbps": 4.1,
+        "latency_ms": 70,
+        "tests_count": 585,
+        "devices_count": 83,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 43.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_128",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89833333333334,
+              20.549999999999997
+            ],
+            [
+              96.90666666666667,
+              20.549999999999997
+            ],
+            [
+              96.90666666666667,
+              20.559999999999995
+            ],
+            [
+              96.89833333333334,
+              20.559999999999995
+            ],
+            [
+              96.89833333333334,
+              20.549999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0128",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 14600,
+        "avg_u_kbps": 6000,
+        "download_mbps": 14.6,
+        "upload_mbps": 6.0,
+        "latency_ms": 34,
+        "tests_count": 592,
+        "devices_count": 170,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 35.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_129",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.90666666666667,
+              20.549999999999997
+            ],
+            [
+              96.91499999999999,
+              20.549999999999997
+            ],
+            [
+              96.91499999999999,
+              20.559999999999995
+            ],
+            [
+              96.90666666666667,
+              20.559999999999995
+            ],
+            [
+              96.90666666666667,
+              20.549999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0129",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 13100,
+        "avg_u_kbps": 6800,
+        "download_mbps": 13.1,
+        "upload_mbps": 6.8,
+        "latency_ms": 77,
+        "tests_count": 558,
+        "devices_count": 160,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 36.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_130",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.91499999999999,
+              20.549999999999997
+            ],
+            [
+              96.92333333333332,
+              20.549999999999997
+            ],
+            [
+              96.92333333333332,
+              20.559999999999995
+            ],
+            [
+              96.91499999999999,
+              20.559999999999995
+            ],
+            [
+              96.91499999999999,
+              20.549999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0130",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 7200,
+        "avg_u_kbps": 8300,
+        "download_mbps": 7.2,
+        "upload_mbps": 8.3,
+        "latency_ms": 46,
+        "tests_count": 255,
+        "devices_count": 105,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 42.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_131",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92333333333333,
+              20.549999999999997
+            ],
+            [
+              96.93166666666667,
+              20.549999999999997
+            ],
+            [
+              96.93166666666667,
+              20.559999999999995
+            ],
+            [
+              96.92333333333333,
+              20.559999999999995
+            ],
+            [
+              96.92333333333333,
+              20.549999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0131",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 19200,
+        "avg_u_kbps": 5900,
+        "download_mbps": 19.2,
+        "upload_mbps": 5.9,
+        "latency_ms": 99,
+        "tests_count": 449,
+        "devices_count": 104,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 30.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_132",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.93166666666667,
+              20.549999999999997
+            ],
+            [
+              96.94,
+              20.549999999999997
+            ],
+            [
+              96.94,
+              20.559999999999995
+            ],
+            [
+              96.93166666666667,
+              20.559999999999995
+            ],
+            [
+              96.93166666666667,
+              20.549999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0132",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 2500,
+        "avg_u_kbps": 7400,
+        "download_mbps": 2.5,
+        "upload_mbps": 7.4,
+        "latency_ms": 119,
+        "tests_count": 414,
+        "devices_count": 101,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 47.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_133",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89,
+              20.56
+            ],
+            [
+              96.89833333333334,
+              20.56
+            ],
+            [
+              96.89833333333334,
+              20.57
+            ],
+            [
+              96.89,
+              20.57
+            ],
+            [
+              96.89,
+              20.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0133",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 9600,
+        "avg_u_kbps": 8200,
+        "download_mbps": 9.6,
+        "upload_mbps": 8.2,
+        "latency_ms": 53,
+        "tests_count": 138,
+        "devices_count": 167,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_134",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89833333333334,
+              20.56
+            ],
+            [
+              96.90666666666667,
+              20.56
+            ],
+            [
+              96.90666666666667,
+              20.57
+            ],
+            [
+              96.89833333333334,
+              20.57
+            ],
+            [
+              96.89833333333334,
+              20.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0134",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 10900,
+        "avg_u_kbps": 5200,
+        "download_mbps": 10.9,
+        "upload_mbps": 5.2,
+        "latency_ms": 55,
+        "tests_count": 255,
+        "devices_count": 148,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 39.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_135",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.90666666666667,
+              20.56
+            ],
+            [
+              96.91499999999999,
+              20.56
+            ],
+            [
+              96.91499999999999,
+              20.57
+            ],
+            [
+              96.90666666666667,
+              20.57
+            ],
+            [
+              96.90666666666667,
+              20.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0135",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 9300,
+        "avg_u_kbps": 6900,
+        "download_mbps": 9.3,
+        "upload_mbps": 6.9,
+        "latency_ms": 71,
+        "tests_count": 66,
+        "devices_count": 48,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 40.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_136",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.91499999999999,
+              20.56
+            ],
+            [
+              96.92333333333332,
+              20.56
+            ],
+            [
+              96.92333333333332,
+              20.57
+            ],
+            [
+              96.91499999999999,
+              20.57
+            ],
+            [
+              96.91499999999999,
+              20.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0136",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 17000,
+        "avg_u_kbps": 2500,
+        "download_mbps": 17.0,
+        "upload_mbps": 2.5,
+        "latency_ms": 49,
+        "tests_count": 456,
+        "devices_count": 153,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 33.0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_137",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92333333333333,
+              20.56
+            ],
+            [
+              96.93166666666667,
+              20.56
+            ],
+            [
+              96.93166666666667,
+              20.57
+            ],
+            [
+              96.92333333333333,
+              20.57
+            ],
+            [
+              96.92333333333333,
+              20.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0137",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 5900,
+        "avg_u_kbps": 4200,
+        "download_mbps": 5.9,
+        "upload_mbps": 4.2,
+        "latency_ms": 75,
+        "tests_count": 329,
+        "devices_count": 135,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 44.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_138",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.93166666666667,
+              20.56
+            ],
+            [
+              96.94,
+              20.56
+            ],
+            [
+              96.94,
+              20.57
+            ],
+            [
+              96.93166666666667,
+              20.57
+            ],
+            [
+              96.93166666666667,
+              20.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0138",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 19600,
+        "avg_u_kbps": 3600,
+        "download_mbps": 19.6,
+        "upload_mbps": 3.6,
+        "latency_ms": 42,
+        "tests_count": 388,
+        "devices_count": 103,
+        "coverage_tier": "Good (4G LTE)",
+        "color": "#00b4d8",
+        "speed_gap": 30.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_139",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89,
+              20.57
+            ],
+            [
+              96.89833333333334,
+              20.57
+            ],
+            [
+              96.89833333333334,
+              20.58
+            ],
+            [
+              96.89,
+              20.58
+            ],
+            [
+              96.89,
+              20.57
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0139",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 14200,
+        "avg_u_kbps": 6100,
+        "download_mbps": 14.2,
+        "upload_mbps": 6.1,
+        "latency_ms": 37,
+        "tests_count": 501,
+        "devices_count": 149,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 35.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_140",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.89833333333334,
+              20.57
+            ],
+            [
+              96.90666666666667,
+              20.57
+            ],
+            [
+              96.90666666666667,
+              20.58
+            ],
+            [
+              96.89833333333334,
+              20.58
+            ],
+            [
+              96.89833333333334,
+              20.57
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0140",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 6600,
+        "avg_u_kbps": 2800,
+        "download_mbps": 6.6,
+        "upload_mbps": 2.8,
+        "latency_ms": 42,
+        "tests_count": 168,
+        "devices_count": 168,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 43.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_141",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.90666666666667,
+              20.57
+            ],
+            [
+              96.91499999999999,
+              20.57
+            ],
+            [
+              96.91499999999999,
+              20.58
+            ],
+            [
+              96.90666666666667,
+              20.58
+            ],
+            [
+              96.90666666666667,
+              20.57
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0141",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 4800,
+        "avg_u_kbps": 2700,
+        "download_mbps": 4.8,
+        "upload_mbps": 2.7,
+        "latency_ms": 61,
+        "tests_count": 571,
+        "devices_count": 60,
+        "coverage_tier": "Poor (Coverage Gap / Dead Zone)",
+        "color": "#ff4d6d",
+        "speed_gap": 45.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_142",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.91499999999999,
+              20.57
+            ],
+            [
+              96.92333333333332,
+              20.57
+            ],
+            [
+              96.92333333333332,
+              20.58
+            ],
+            [
+              96.91499999999999,
+              20.58
+            ],
+            [
+              96.91499999999999,
+              20.57
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0142",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 11600,
+        "avg_u_kbps": 3200,
+        "download_mbps": 11.6,
+        "upload_mbps": 3.2,
+        "latency_ms": 44,
+        "tests_count": 556,
+        "devices_count": 90,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 38.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_143",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.92333333333333,
+              20.57
+            ],
+            [
+              96.93166666666667,
+              20.57
+            ],
+            [
+              96.93166666666667,
+              20.58
+            ],
+            [
+              96.92333333333333,
+              20.58
+            ],
+            [
+              96.92333333333333,
+              20.57
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0143",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 12200,
+        "avg_u_kbps": 4600,
+        "download_mbps": 12.2,
+        "upload_mbps": 4.6,
+        "latency_ms": 106,
+        "tests_count": 447,
+        "devices_count": 120,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "speed_tile_144",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              96.93166666666667,
+              20.57
+            ],
+            [
+              96.94,
+              20.57
+            ],
+            [
+              96.94,
+              20.58
+            ],
+            [
+              96.93166666666667,
+              20.58
+            ],
+            [
+              96.93166666666667,
+              20.57
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "tile_id": "OOKLA-0144",
+        "region": "Inle_Basin",
+        "avg_d_kbps": 13000,
+        "avg_u_kbps": 6700,
+        "download_mbps": 13.0,
+        "upload_mbps": 6.7,
+        "latency_ms": 65,
+        "tests_count": 226,
+        "devices_count": 17,
+        "coverage_tier": "Fair (Congested 4G)",
+        "color": "#ffd166",
+        "speed_gap": 37.0
+      }
+    }
+  ]
+}

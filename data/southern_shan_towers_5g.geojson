@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "tower_1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.038,
+          20.785
+        ]
+      },
+      "properties": {
+        "id": "TOW-001",
+        "name": "Taunggyi Central Tower 01 (Bogyoke Rd)",
+        "region": "Taunggyi",
+        "tower_type": "Macro Tower",
+        "antenna_height_m": 38,
+        "power_watts": 120,
+        "technology": "5G NR + 4G LTE",
+        "coverage_radius_m": 1330,
+        "status": "Active",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 2118
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.046,
+          20.792
+        ]
+      },
+      "properties": {
+        "id": "TOW-002",
+        "name": "Taunggyi Viewpoint Hill Mast",
+        "region": "Taunggyi",
+        "tower_type": "Hilltop Mast",
+        "antenna_height_m": 45,
+        "power_watts": 160,
+        "technology": "4G LTE / 5G Small Cell",
+        "coverage_radius_m": 1575,
+        "status": "Active",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 1683
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.028,
+          20.772
+        ]
+      },
+      "properties": {
+        "id": "TOW-003",
+        "name": "Taunggyi University Campus Tower",
+        "region": "Taunggyi",
+        "tower_type": "Monopole",
+        "antenna_height_m": 30,
+        "power_watts": 80,
+        "technology": "5G Small Cell Ready",
+        "coverage_radius_m": 1050,
+        "status": "Active",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 1775
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.033,
+          20.768
+        ]
+      },
+      "properties": {
+        "id": "TOW-004",
+        "name": "Taunggyi South Market Mast",
+        "region": "Taunggyi",
+        "tower_type": "Rooftop Mast",
+        "antenna_height_m": 24,
+        "power_watts": 60,
+        "technology": "4G LTE",
+        "coverage_radius_m": 840,
+        "status": "High Congestion",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 2183
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.174,
+          20.798
+        ]
+      },
+      "properties": {
+        "id": "TOW-005",
+        "name": "Hopong Highway Junction Tower",
+        "region": "Hopong",
+        "tower_type": "Lattice Tower",
+        "antenna_height_m": 42,
+        "power_watts": 140,
+        "technology": "4G LTE",
+        "coverage_radius_m": 1470,
+        "status": "Active",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 1181
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.182,
+          20.812
+        ]
+      },
+      "properties": {
+        "id": "TOW-006",
+        "name": "Hopong Valley North Monopole",
+        "region": "Hopong",
+        "tower_type": "Monopole",
+        "antenna_height_m": 28,
+        "power_watts": 70,
+        "technology": "4G LTE",
+        "coverage_radius_m": 980,
+        "status": "Coverage Gap",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 2394
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.935,
+          20.663
+        ]
+      },
+      "properties": {
+        "id": "TOW-007",
+        "name": "Nyaungshwe Canal Jetty Tower",
+        "region": "Nyaungshwe",
+        "tower_type": "Macro Tower",
+        "antenna_height_m": 35,
+        "power_watts": 110,
+        "technology": "5G NR + 4G LTE",
+        "coverage_radius_m": 1225,
+        "status": "Active",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 1789
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.928,
+          20.672
+        ]
+      },
+      "properties": {
+        "id": "TOW-008",
+        "name": "Nyaungshwe Entry Highway Mast",
+        "region": "Nyaungshwe",
+        "tower_type": "Monopole",
+        "antenna_height_m": 30,
+        "power_watts": 80,
+        "technology": "4G LTE",
+        "coverage_radius_m": 1050,
+        "status": "Active",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 1198
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.916,
+          20.57
+        ]
+      },
+      "properties": {
+        "id": "TOW-009",
+        "name": "Inle Lake North Basin Repeater",
+        "region": "Inle_Basin",
+        "tower_type": "Water Pile Mast",
+        "antenna_height_m": 22,
+        "power_watts": 50,
+        "technology": "4G LTE Solar",
+        "coverage_radius_m": 770,
+        "status": "Active",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 1387
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tower_10",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.912,
+          20.535
+        ]
+      },
+      "properties": {
+        "id": "TOW-010",
+        "name": "Inle Lake Central Floating Station",
+        "region": "Inle_Basin",
+        "tower_type": "Water Pile Mast",
+        "antenna_height_m": 20,
+        "power_watts": 45,
+        "technology": "4G Rural",
+        "coverage_radius_m": 700,
+        "status": "Weak Signal",
+        "frequency_band": "3.5 GHz (n78) / 1.8 GHz (B3)",
+        "connected_subscribers": 365
+      }
+    }
+  ]
+}

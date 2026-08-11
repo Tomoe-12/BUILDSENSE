@@ -1,0 +1,11 @@
+{
+  "project": "GeoTelecom 3D",
+  "region": "Southern Shan State (Taunggyi, Hopong, Nyaungshwe, Inle)",
+  "total_buildings_analyzed": 410,
+  "existing_base_stations": 10,
+  "ookla_speed_tiles": 144,
+  "recommended_new_5g_sites": 8,
+  "avg_suitability_score": 55.1,
+  "avg_indoor_attenuation_db": 29.9,
+  "coverage_gap_ratio": "24.8%"
+}
