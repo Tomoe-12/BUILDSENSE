@@ -3,6 +3,7 @@
 > **ASEAN GeoAI Fusion 2026 Competition Entry**  
 > **Developed by:** Team Triad  
 > **Project Name:** BUILDSENSE  
+> **Team Code:** MM-021  
 > **Live Demo:** [Deploy on Vercel](https://buildsense-5g.vercel.app) | **Colab Notebook:** [`GeoTelecom_3D_Colab.ipynb`](./GeoTelecom_3D_Colab.ipynb) 
 
 ---
@@ -16,7 +17,7 @@ Deploying 5G networks in mountainous, high-altitude regions like **Southern Shan
 - **Monsoon Rain Attenuation:** Heavy rainfall signal loss (-3.5 dB/km).
 - **Indoor Building Penetration Loss (ITU-R P.2109):** High signal attenuation through thick concrete structures.
 
-**BUILDSENSE** solves this by uniting **SciKit-Learn K-Means Spatial Clustering**, **3D WebGL Digital Twin Rendering**, **Ookla Mobile Speed Grids**, **Uber H3 Hexagon Analytics**, and **Google Earth Engine Satellite Remote Sensing** into a real-time interactive signal optimizer.
+**BUILDSENSE** solves this by uniting **SciKit-Learn K-Means Spatial Clustering**, **3D WebGL Digital Twin Rendering**, **Ookla Mobile Speed Grids**, and **Uber H3 Hexagon Analytics** into a real-time interactive signal optimizer.
 
 ---
 
@@ -39,12 +40,6 @@ Deploying 5G networks in mountainous, high-altitude regions like **Southern Shan
 ### 4. ⚡ Speed Grid & Spatial Hexagon Analytics
 - **5,427 Ookla Speed Grid Tiles:** Maps real-world 4G/5G download speeds (>120 Mbps to <20 Mbps).
 - **993 Uber H3 Hexagons:** Evaluates spatial subscriber density and network load distribution.
-
-### 5. 🛰️ Google Earth Engine (GEE) Remote Sensing Module
-- Standalone Notebook (`BuildSense_Google_Earth_Engine.ipynb`) leveraging Google Earth Engine API:
-  - **Sentinel-2 Surface Reflectance:** NDVI Vegetation Index & Urban Footprints.
-  - **Dynamic World LULC:** Land Use / Land Cover Classification.
-  - **SRTM DEM 30m:** Elevation & Slope Profile Analysis for Shan Ridges.
 
 ---
 
@@ -121,6 +116,7 @@ BUILDSENSE/
 ## 👥 Team Triad Roster & Roles
 
 - **Team Name:** Team Triad
+- **Team Code:** MM-021
 - **Competition:** ASEAN GeoAI Fusion 2026
 
 | Team Member Name | Role & Responsibility | Contact / GitHub |
