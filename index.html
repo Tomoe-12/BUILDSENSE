@@ -888,6 +888,144 @@ input:checked + .slider:before {
     box-shadow: 0 4px 12px rgba(255, 59, 48, 0.3);
 }
 
+.btn-open-tower-controls {
+    width: 100%;
+    background: var(--ios-blue);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+.btn-open-tower-controls:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Right-Side Tower Control Panel */
+.tower-control-panel {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    width: 320px;
+    max-height: calc(100vh - 100px);
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(0, 122, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-y: auto;
+}
+
+.tower-control-panel.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(30px) scale(0.95);
+}
+
+.tower-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(60, 60, 67, 0.12);
+    margin-bottom: 14px;
+}
+
+.tower-panel-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1c1c1e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tower-panel-close-btn {
+    background: rgba(120, 120, 128, 0.12);
+    border: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1c1c1e;
+    transition: all 0.2s ease;
+}
+
+.tower-panel-close-btn:hover {
+    background: #ff3b30;
+    color: #ffffff;
+}
+
+.panel-field {
+    margin-bottom: 12px;
+}
+
+.panel-field label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #6c6c70;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.panel-field input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+}
+
+.tower-stats-box {
+    background: rgba(242, 242, 247, 0.8);
+    border: 1px solid rgba(60, 60, 67, 0.1);
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-top: 14px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.stat-row:last-child {
+    margin-bottom: 0;
+}
+
+.stat-lbl {
+    color: #8e8e93;
+    font-weight: 600;
+}
+
+.stat-val {
+    color: #1c1c1e;
+    font-weight: 700;
+}
+
         html, body { background-color: #060a14 !important; height: 100vh !important; width: 100vw !important; margin: 0; padding: 0; overflow: hidden; }
         #app-container { height: 100vh !important; width: 100vw !important; max-width: 100% !important; border-radius: 0px; overflow: hidden; border: none; display: flex; flex-direction: column; }
         #main-layout { height: calc(100vh - 64px) !important; width: 100vw !important; display: flex; flex: 1; position: relative; overflow: hidden; }
@@ -957,17 +1095,9 @@ input:checked + .slider:before {
                     <div class="sidebar-title">Simulation Controls</div>
                     <button class="sidebar-close-btn" id="btn-close-sidebar">✖</button>
                 </div>
-                <div class="sidebar-section">
-                    <div class="section-title">5G Frequency Band <span class="info-icon" title="Select 5G Radio Spectrum: 700MHz (Low-Band distance), 3.5GHz (Mid-Band standard), 28GHz (mmWave capacity)."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span></div>
-                    <div class="freq-group">
-                        <button class="freq-btn active" data-freq="3500">3.5 GHz</button>
-                        <button class="freq-btn" data-freq="700">700 MHz</button>
-                        <button class="freq-btn" data-freq="28000">28 GHz</button>
-                    </div>
-                </div>
 
                 <div class="sidebar-section">
-                    <div class="section-title">Real-World 5G Simulation Controls <span class="info-icon" title="Tune 64x64 Massive MIMO Beamforming, Transmitter Power (10W-100W), Channel Bandwidth (20-100MHz), Shan Weather rain loss, and Terrain ridge diffraction."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span></div>
+                    <div class="section-title">Global Environmental & AI Controls <span class="info-icon" title="Tune AI target sites density, Shan Weather rain loss, and Terrain ridge diffraction."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span></div>
                     
                     <div style="margin-bottom: 10px;">
                         <div class="control-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
@@ -977,31 +1107,7 @@ input:checked + .slider:before {
                         <input type="range" id="sim-ai-sites" min="8" max="40" step="4" value="24" style="width:100%;">
                     </div>
 
-                    <div style="margin-bottom: 8px;">
-                        <label style="font-size:11px; font-weight:600; color:var(--text-primary);">Antenna Array & Beamforming:</label>
-                        <select id="sim-mimo" class="sim-select">
-                            <option value="64x64" selected>64x64 Massive MIMO Beamforming (+10 dBm)</option>
-                            <option value="4x4">4x4 Standard MIMO Array</option>
-                        </select>
-                    </div>
 
-                    <div style="margin-bottom: 8px;">
-                        <label style="font-size:11px; font-weight:600; color:var(--text-primary);">Transmitter Power (Tx Power):</label>
-                        <select id="sim-power" class="sim-select">
-                            <option value="40" selected>40W (Urban Base Station)</option>
-                            <option value="10">10W (Micro Small Cell / Smart Pole)</option>
-                            <option value="100">100W (High-Power Rural Macro Mast)</option>
-                        </select>
-                    </div>
-
-                    <div style="margin-bottom: 8px;">
-                        <label style="font-size:11px; font-weight:600; color:var(--text-primary);">Channel Bandwidth:</label>
-                        <select id="sim-bw" class="sim-select">
-                            <option value="100" selected>100 MHz (Full 5G Bandwidth - Max Speed)</option>
-                            <option value="50">50 MHz (Standard Commercial)</option>
-                            <option value="20">20 MHz (Basic Spectrum)</option>
-                        </select>
-                    </div>
 
                     <div style="margin-bottom: 8px;">
                         <label style="font-size:11px; font-weight:600; color:var(--text-primary);">Shan Weather & Rain Attenuation:</label>
@@ -1048,6 +1154,10 @@ input:checked + .slider:before {
                     <div class="toggle-item">
                         <span class="toggle-label"><span class="color-dot dot-towers"></span> Legacy Towers</span>
                         <label class="switch"><input type="checkbox" id="toggle-towers" checked><span class="slider"></span></label>
+                    </div>
+                    <div class="toggle-item">
+                        <span class="toggle-label"><span class="color-dot dot-waves" style="background:#00f2fe; box-shadow:0 0 6px #00f2fe;"></span> 5G Signal Waves</span>
+                        <label class="switch"><input type="checkbox" id="toggle-signal" checked><span class="slider"></span></label>
                     </div>
                     <div class="toggle-item">
                         <span class="toggle-label"><span class="color-dot dot-ai"></span> AI Small Cells</span>
@@ -1140,6 +1250,81 @@ input:checked + .slider:before {
             </div>
         </div>
     </div>
+    </div>
+
+    <!-- Right-Side Tower Configuration Panel -->
+    <div id="tower-control-panel" class="tower-control-panel hidden">
+        <div class="tower-panel-header">
+            <div class="tower-panel-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b7791f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
+                <span id="tcp-tower-title">Tower Control Panel</span>
+            </div>
+            <button id="btn-close-tower-panel" class="tower-panel-close-btn">✖</button>
+        </div>
+        
+        <div class="tower-panel-body">
+            <input type="hidden" id="tcp-tower-id" value="">
+            
+            <div class="panel-field">
+                <label>Tower Name / Label:</label>
+                <input type="text" id="tcp-tower-name" value="User 5G Cell">
+            </div>
+
+            <div class="panel-field">
+                <label>Operating Frequency Band:</label>
+                <select id="tcp-freq" class="sim-select">
+                    <option value="700">700 MHz Low-Band (Wide Coverage - 864m)</option>
+                    <option value="3500" selected>3.5 GHz Mid-Band n78 (Standard - 480m)</option>
+                    <option value="28000">28 GHz mmWave (Ultra Gigabit - 168m)</option>
+                </select>
+            </div>
+
+            <div class="panel-field">
+                <label>Transmitter Power (Tx Power):</label>
+                <select id="tcp-power" class="sim-select">
+                    <option value="10">10W (Micro Small Cell / Smart Pole)</option>
+                    <option value="40" selected>40W (Standard Base Station)</option>
+                    <option value="100">100W (High-Power Rural Macro Mast)</option>
+                </select>
+            </div>
+
+            <div class="panel-field">
+                <label>MIMO Array & Beamforming:</label>
+                <select id="tcp-mimo" class="sim-select">
+                    <option value="64x64" selected>64x64 Massive MIMO (+10 dBm Boost)</option>
+                    <option value="4x4">4x4 Standard MIMO Array</option>
+                </select>
+            </div>
+
+            <div class="panel-field">
+                <label>Antenna Height (Meters):</label>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                    <span id="tcp-height-val" style="font-size:11px; font-weight:700; color:var(--ios-blue);">30 meters</span>
+                </div>
+                <input type="range" id="tcp-height" min="15" max="60" value="30" style="width:100%;">
+            </div>
+
+            <div class="tower-stats-box">
+                <div class="stat-row">
+                    <span class="stat-lbl">Effective Radius:</span>
+                    <span id="tcp-stat-radius" class="stat-val" style="color:var(--ios-blue);">480 m</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-lbl">Connected Users:</span>
+                    <span id="tcp-stat-users" class="stat-val">850 Subscribers</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-lbl">Operational Status:</span>
+                    <span id="tcp-stat-status" class="stat-val" style="color:#00a86b;">Active 5G Operational</span>
+                </div>
+            </div>
+
+            <div style="margin-top:16px;">
+                <button id="tcp-btn-delete" class="btn-delete-tower" style="width:100%; padding:10px; font-size:12px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete Deployed Tower
+                </button>
+            </div>
+        </div>
     </div>
 
     <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
@@ -1352,43 +1537,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 4. AI Proposed 5G Small Cells Layer (🟢 Green Pins & Dynamic Blue Coverage Circles)
+        // 4. AI Proposed 5G Small Cells Layer (🟢 Clean Candidate Pins - No radar wave until deployed!)
         if (!map.getSource('recommended-5g')) {
             map.addSource('recommended-5g', { type: 'geojson', data: recommendedGeoJSON });
             
-            map.addLayer({
-                id: 'layer-proposed-signal-wave',
-                type: 'circle',
-                source: 'recommended-5g',
-                paint: {
-                    'circle-radius': [
-                        'interpolate',
-                        ['exponential', 2],
-                        ['zoom'],
-                        0, 0,
-                        10, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.024],
-                        12, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.096],
-                        14, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.385],
-                        16, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 1.54],
-                        18, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 6.16],
-                        20, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 24.6]
-                    ],
-                    'circle-color': '#00ff88',
-                    'circle-opacity': 0.15,
-                    'circle-stroke-width': 1.8,
-                    'circle-stroke-color': '#00ff88',
-                    'circle-pitch-scale': 'map',
-                    'circle-pitch-alignment': 'map'
-                }
-            });
-
             map.addLayer({
                 id: 'layer-proposed-5g',
                 type: 'circle',
                 source: 'recommended-5g',
                 paint: {
                     'circle-radius': 8,
-                    'circle-color': '#00ff88', // 🟢 Neon Green for AI Recommended
+                    'circle-color': '#00ff88', // 🟢 Neon Green for AI Recommended Candidate
                     'circle-stroke-width': 3,
                     'circle-stroke-color': '#060a14'
                 }
@@ -1484,19 +1643,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const buildingsData = window.BUILDINGS_DATA || window.BUILDINGS_3D_DATA;
         if (!buildingsData || !buildingsData.features) return;
         
-        let globalMult = simFreq === 700 ? 1.8 : (simFreq === 28000 ? 0.35 : 1.0);
-        if (simMimo === "64x64") globalMult *= 1.15;
-        if (simPower === 100) globalMult *= 1.25;
-        if (simPower === 10) globalMult *= 0.7;
-        if (simWeather === "rain") globalMult *= 0.82;
-        if (simWeather === "foliage") globalMult *= 0.75;
-        if (simTerrain === "diffraction") globalMult *= 0.85;
+        let envMult = 1.0;
+        if (simWeather === "rain") envMult *= 0.82;
+        if (simWeather === "foliage") envMult *= 0.75;
+        if (simTerrain === "diffraction") envMult *= 0.85;
 
-        // 0. Push real-time radius_multiplier to MapLibre cell-towers layer for visual radar wave expansion/shrinkage!
+        // 0. Ensure Red Legacy Towers stay fixed baseline, while preserving individual custom radius for user-deployed towers!
         if (towersGeoJSON.features) {
             towersGeoJSON.features.forEach(t => {
                 if (!t.properties.is_user_deployed) {
-                    t.properties.radius_multiplier = globalMult;
+                    t.properties.radius_multiplier = 1.0 * envMult; // Fixed baseline + environmental weather factor
                 }
             });
             if (map.getSource('cell-towers')) {
@@ -1562,10 +1718,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. Real-time HUD Status Telemetry Bar Update
         const deadCount = uncoveredPoints.length;
-        let weatherLabel = simWeather === 'rain' ? 'Rain (-18%)' : (simWeather === 'foliage' ? 'Foliage (-25%)' : 'Clear Sky');
+        const deployedCount = allTowers.filter(t => t.properties && t.properties.is_user_deployed).length;
+        let weatherLabel = simWeather === 'rain' ? 'Monsoon Rain (-18%)' : (simWeather === 'foliage' ? 'Forest Foliage (-25%)' : 'Clear Sky');
+        let terrainLabel = simTerrain === 'diffraction' ? 'ITU-R P.526 Ridge Loss' : 'Flat LOS';
         const hudElem = document.getElementById('hud-status');
         if (hudElem) {
-            hudElem.textContent = `BuildSense | Freq: ${simFreq}MHz | MIMO: ${simMimo} | Power: ${simPower}W | BW: ${simBw}MHz | Weather: ${weatherLabel} | Active 5G Radius: ${Math.round(480 * globalMult)}m | Dead Zone Buildings: ${deadCount}`;
+            hudElem.textContent = `BuildSense | Deployed 5G Cells: ${deployedCount} | Weather: ${weatherLabel} | Terrain: ${terrainLabel} | Dead Zone Buildings: ${deadCount}`;
         }
     }
 
@@ -1701,19 +1859,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 .addTo(map);
         });
 
-        // Tower Click Handler (Includes Delete Tower Option for User-Deployed Towers)
+        // Tower Click Handler (Includes Tower Control Panel Option for User-Deployed Towers)
         map.on('click', 'layer-towers', (e) => {
             if (!e.features.length) return;
             const feat = e.features[0];
             const props = feat.properties;
             const towerId = feat.id || props.id;
 
-            let deleteBtnHtml = "";
+            let controlPanelBtnHtml = "";
             if (props.is_user_deployed) {
-                deleteBtnHtml = `
+                controlPanelBtnHtml = `
                     <div style="margin-top:12px; text-align:center;">
-                        <button id="btn-delete-tower-${towerId}" class="btn-delete-tower" onclick="window.deleteBuildSenseTower('${towerId}')">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete Deployed Tower
+                        <button class="btn-open-tower-controls" onclick="window.openTowerControlPanel('${towerId}')">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Tower Control Panel
                         </button>
                     </div>
                 `;
@@ -1751,10 +1909,123 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Status:</span>
                         <span class="val" style="color:${props.is_user_deployed ? '#b7791f' : '#00a86b'}">${props.status}</span>
                     </div>
-                    ${deleteBtnHtml}
+                    ${controlPanelBtnHtml}
                 `)
                 .addTo(map);
         });
+
+        // Tower Control Panel Functions
+        window.openTowerControlPanel = function(towerId) {
+            const tower = towersGeoJSON.features.find(t => t.id === towerId || t.properties.id === towerId);
+            if (!tower) return;
+
+            // Close Map Popups
+            const popups = document.getElementsByClassName('maplibregl-popup');
+            while (popups[0]) popups[0].remove();
+
+            const props = tower.properties;
+            document.getElementById('tcp-tower-id').value = towerId;
+            document.getElementById('tcp-tower-name').value = props.name || 'User 5G Cell';
+            document.getElementById('tcp-tower-title').textContent = props.name || 'Tower Control Panel';
+            
+            // Preselect Frequency
+            const freqSelect = document.getElementById('tcp-freq');
+            if (props.freq_mhz) freqSelect.value = props.freq_mhz.toString();
+            else if (props.radius_multiplier === 1.8) freqSelect.value = '700';
+            else if (props.radius_multiplier === 0.35) freqSelect.value = '28000';
+            else freqSelect.value = '3500';
+
+            // Preselect Tx Power
+            document.getElementById('tcp-power').value = (props.tx_power_w || 40).toString();
+            document.getElementById('tcp-mimo').value = props.mimo || '64x64';
+            
+            const height = props.antenna_height_m || 30;
+            document.getElementById('tcp-height').value = height;
+            document.getElementById('tcp-height-val').textContent = `${height} meters`;
+
+            // Stats
+            const mult = props.radius_multiplier || 1.0;
+            const radius = Math.round((props.coverage_radius_m || 480) * mult);
+            document.getElementById('tcp-stat-radius').textContent = `${radius} m`;
+            document.getElementById('tcp-stat-users').textContent = `${props.connected_subscribers || 850} Subscribers`;
+            document.getElementById('tcp-stat-status').textContent = props.status || 'Active 5G Operational';
+
+            // Show Panel
+            const panel = document.getElementById('tower-control-panel');
+            if (panel) panel.classList.remove('hidden');
+        };
+
+        // Close Panel Event
+        const closePanelBtn = document.getElementById('btn-close-tower-panel');
+        if (closePanelBtn) {
+            closePanelBtn.addEventListener('click', () => {
+                const panel = document.getElementById('tower-control-panel');
+                if (panel) panel.classList.add('hidden');
+            });
+        }
+
+        // Real-Time Tower Customization Inputs Listener
+        const updateCurrentTowerConfig = () => {
+            const towerId = document.getElementById('tcp-tower-id').value;
+            if (!towerId) return;
+
+            const tower = towersGeoJSON.features.find(t => t.id === towerId || t.properties.id === towerId);
+            if (!tower) return;
+
+            const newName = document.getElementById('tcp-tower-name').value;
+            const freqVal = parseInt(document.getElementById('tcp-freq').value);
+            const powerVal = parseInt(document.getElementById('tcp-power').value);
+            const mimoVal = document.getElementById('tcp-mimo').value;
+            const heightVal = parseInt(document.getElementById('tcp-height').value);
+
+            let mult = freqVal === 700 ? 1.8 : (freqVal === 28000 ? 0.35 : 1.0);
+            if (mimoVal === '64x64') mult *= 1.15;
+            if (powerVal === 100) mult *= 1.25;
+            if (powerVal === 10) mult *= 0.7;
+
+            tower.properties.name = newName;
+            tower.properties.freq_mhz = freqVal;
+            tower.properties.tx_power_w = powerVal;
+            tower.properties.mimo = mimoVal;
+            tower.properties.antenna_height_m = heightVal;
+            tower.properties.radius_multiplier = mult;
+            tower.properties.technology = `5G NR (${freqVal === 700 ? '700MHz' : (freqVal === 28000 ? '28GHz mmWave' : '3.5GHz n78')})`;
+
+            document.getElementById('tcp-tower-title').textContent = newName;
+            document.getElementById('tcp-height-val').textContent = `${heightVal} meters`;
+            
+            const effectiveRadius = Math.round((tower.properties.coverage_radius_m || 480) * mult);
+            document.getElementById('tcp-stat-radius').textContent = `${effectiveRadius} m`;
+
+            // Update Map Source
+            if (map.getSource('cell-towers')) {
+                map.getSource('cell-towers').setData(towersGeoJSON);
+            }
+
+            // Recalculate AI & Speed Tiles
+            recalculateAIRecommendations();
+        };
+
+        ['tcp-tower-name', 'tcp-freq', 'tcp-power', 'tcp-mimo', 'tcp-height'].forEach(id => {
+            const elem = document.getElementById(id);
+            if (elem) {
+                elem.addEventListener('input', updateCurrentTowerConfig);
+                elem.addEventListener('change', updateCurrentTowerConfig);
+            }
+        });
+
+        // Delete Tower inside Panel
+        const tcpDeleteBtn = document.getElementById('tcp-btn-delete');
+        if (tcpDeleteBtn) {
+            tcpDeleteBtn.addEventListener('click', () => {
+                const towerId = document.getElementById('tcp-tower-id').value;
+                if (towerId) {
+                    window.deleteBuildSenseTower(towerId);
+                    const panel = document.getElementById('tower-control-panel');
+                    if (panel) panel.classList.add('hidden');
+                }
+            });
+        }
 
         // Delete Tower Global Function
         window.deleteBuildSenseTower = function(towerId) {

@@ -197,43 +197,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 4. AI Proposed 5G Small Cells Layer (🟢 Green Pins & Dynamic Blue Coverage Circles)
+        // 4. AI Proposed 5G Small Cells Layer (🟢 Clean Candidate Pins - No radar wave until deployed!)
         if (!map.getSource('recommended-5g')) {
             map.addSource('recommended-5g', { type: 'geojson', data: recommendedGeoJSON });
             
-            map.addLayer({
-                id: 'layer-proposed-signal-wave',
-                type: 'circle',
-                source: 'recommended-5g',
-                paint: {
-                    'circle-radius': [
-                        'interpolate',
-                        ['exponential', 2],
-                        ['zoom'],
-                        0, 0,
-                        10, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.024],
-                        12, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.096],
-                        14, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.385],
-                        16, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 1.54],
-                        18, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 6.16],
-                        20, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 24.6]
-                    ],
-                    'circle-color': '#00ff88',
-                    'circle-opacity': 0.15,
-                    'circle-stroke-width': 1.8,
-                    'circle-stroke-color': '#00ff88',
-                    'circle-pitch-scale': 'map',
-                    'circle-pitch-alignment': 'map'
-                }
-            });
-
             map.addLayer({
                 id: 'layer-proposed-5g',
                 type: 'circle',
                 source: 'recommended-5g',
                 paint: {
                     'circle-radius': 8,
-                    'circle-color': '#00ff88', // 🟢 Neon Green for AI Recommended
+                    'circle-color': '#00ff88', // 🟢 Neon Green for AI Recommended Candidate
                     'circle-stroke-width': 3,
                     'circle-stroke-color': '#060a14'
                 }
@@ -329,19 +303,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const buildingsData = window.BUILDINGS_DATA || window.BUILDINGS_3D_DATA;
         if (!buildingsData || !buildingsData.features) return;
         
-        let globalMult = simFreq === 700 ? 1.8 : (simFreq === 28000 ? 0.35 : 1.0);
-        if (simMimo === "64x64") globalMult *= 1.15;
-        if (simPower === 100) globalMult *= 1.25;
-        if (simPower === 10) globalMult *= 0.7;
-        if (simWeather === "rain") globalMult *= 0.82;
-        if (simWeather === "foliage") globalMult *= 0.75;
-        if (simTerrain === "diffraction") globalMult *= 0.85;
+        let envMult = 1.0;
+        if (simWeather === "rain") envMult *= 0.82;
+        if (simWeather === "foliage") envMult *= 0.75;
+        if (simTerrain === "diffraction") envMult *= 0.85;
 
-        // 0. Push real-time radius_multiplier to MapLibre cell-towers layer for visual radar wave expansion/shrinkage!
+        // 0. Ensure Red Legacy Towers stay fixed baseline, while preserving individual custom radius for user-deployed towers!
         if (towersGeoJSON.features) {
             towersGeoJSON.features.forEach(t => {
                 if (!t.properties.is_user_deployed) {
-                    t.properties.radius_multiplier = globalMult;
+                    t.properties.radius_multiplier = 1.0 * envMult; // Fixed baseline + environmental weather factor
                 }
             });
             if (map.getSource('cell-towers')) {
@@ -407,10 +378,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. Real-time HUD Status Telemetry Bar Update
         const deadCount = uncoveredPoints.length;
-        let weatherLabel = simWeather === 'rain' ? 'Rain (-18%)' : (simWeather === 'foliage' ? 'Foliage (-25%)' : 'Clear Sky');
+        const deployedCount = allTowers.filter(t => t.properties && t.properties.is_user_deployed).length;
+        let weatherLabel = simWeather === 'rain' ? 'Monsoon Rain (-18%)' : (simWeather === 'foliage' ? 'Forest Foliage (-25%)' : 'Clear Sky');
+        let terrainLabel = simTerrain === 'diffraction' ? 'ITU-R P.526 Ridge Loss' : 'Flat LOS';
         const hudElem = document.getElementById('hud-status');
         if (hudElem) {
-            hudElem.textContent = `BuildSense | Freq: ${simFreq}MHz | MIMO: ${simMimo} | Power: ${simPower}W | BW: ${simBw}MHz | Weather: ${weatherLabel} | Active 5G Radius: ${Math.round(480 * globalMult)}m | Dead Zone Buildings: ${deadCount}`;
+            hudElem.textContent = `BuildSense | Deployed 5G Cells: ${deployedCount} | Weather: ${weatherLabel} | Terrain: ${terrainLabel} | Dead Zone Buildings: ${deadCount}`;
         }
     }
 
@@ -546,19 +519,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 .addTo(map);
         });
 
-        // Tower Click Handler (Includes Delete Tower Option for User-Deployed Towers)
+        // Tower Click Handler (Includes Tower Control Panel Option for User-Deployed Towers)
         map.on('click', 'layer-towers', (e) => {
             if (!e.features.length) return;
             const feat = e.features[0];
             const props = feat.properties;
             const towerId = feat.id || props.id;
 
-            let deleteBtnHtml = "";
+            let controlPanelBtnHtml = "";
             if (props.is_user_deployed) {
-                deleteBtnHtml = `
+                controlPanelBtnHtml = `
                     <div style="margin-top:12px; text-align:center;">
-                        <button id="btn-delete-tower-${towerId}" class="btn-delete-tower" onclick="window.deleteBuildSenseTower('${towerId}')">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete Deployed Tower
+                        <button class="btn-open-tower-controls" onclick="window.openTowerControlPanel('${towerId}')">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Tower Control Panel
                         </button>
                     </div>
                 `;
@@ -596,10 +569,123 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Status:</span>
                         <span class="val" style="color:${props.is_user_deployed ? '#b7791f' : '#00a86b'}">${props.status}</span>
                     </div>
-                    ${deleteBtnHtml}
+                    ${controlPanelBtnHtml}
                 `)
                 .addTo(map);
         });
+
+        // Tower Control Panel Functions
+        window.openTowerControlPanel = function(towerId) {
+            const tower = towersGeoJSON.features.find(t => t.id === towerId || t.properties.id === towerId);
+            if (!tower) return;
+
+            // Close Map Popups
+            const popups = document.getElementsByClassName('maplibregl-popup');
+            while (popups[0]) popups[0].remove();
+
+            const props = tower.properties;
+            document.getElementById('tcp-tower-id').value = towerId;
+            document.getElementById('tcp-tower-name').value = props.name || 'User 5G Cell';
+            document.getElementById('tcp-tower-title').textContent = props.name || 'Tower Control Panel';
+            
+            // Preselect Frequency
+            const freqSelect = document.getElementById('tcp-freq');
+            if (props.freq_mhz) freqSelect.value = props.freq_mhz.toString();
+            else if (props.radius_multiplier === 1.8) freqSelect.value = '700';
+            else if (props.radius_multiplier === 0.35) freqSelect.value = '28000';
+            else freqSelect.value = '3500';
+
+            // Preselect Tx Power
+            document.getElementById('tcp-power').value = (props.tx_power_w || 40).toString();
+            document.getElementById('tcp-mimo').value = props.mimo || '64x64';
+            
+            const height = props.antenna_height_m || 30;
+            document.getElementById('tcp-height').value = height;
+            document.getElementById('tcp-height-val').textContent = `${height} meters`;
+
+            // Stats
+            const mult = props.radius_multiplier || 1.0;
+            const radius = Math.round((props.coverage_radius_m || 480) * mult);
+            document.getElementById('tcp-stat-radius').textContent = `${radius} m`;
+            document.getElementById('tcp-stat-users').textContent = `${props.connected_subscribers || 850} Subscribers`;
+            document.getElementById('tcp-stat-status').textContent = props.status || 'Active 5G Operational';
+
+            // Show Panel
+            const panel = document.getElementById('tower-control-panel');
+            if (panel) panel.classList.remove('hidden');
+        };
+
+        // Close Panel Event
+        const closePanelBtn = document.getElementById('btn-close-tower-panel');
+        if (closePanelBtn) {
+            closePanelBtn.addEventListener('click', () => {
+                const panel = document.getElementById('tower-control-panel');
+                if (panel) panel.classList.add('hidden');
+            });
+        }
+
+        // Real-Time Tower Customization Inputs Listener
+        const updateCurrentTowerConfig = () => {
+            const towerId = document.getElementById('tcp-tower-id').value;
+            if (!towerId) return;
+
+            const tower = towersGeoJSON.features.find(t => t.id === towerId || t.properties.id === towerId);
+            if (!tower) return;
+
+            const newName = document.getElementById('tcp-tower-name').value;
+            const freqVal = parseInt(document.getElementById('tcp-freq').value);
+            const powerVal = parseInt(document.getElementById('tcp-power').value);
+            const mimoVal = document.getElementById('tcp-mimo').value;
+            const heightVal = parseInt(document.getElementById('tcp-height').value);
+
+            let mult = freqVal === 700 ? 1.8 : (freqVal === 28000 ? 0.35 : 1.0);
+            if (mimoVal === '64x64') mult *= 1.15;
+            if (powerVal === 100) mult *= 1.25;
+            if (powerVal === 10) mult *= 0.7;
+
+            tower.properties.name = newName;
+            tower.properties.freq_mhz = freqVal;
+            tower.properties.tx_power_w = powerVal;
+            tower.properties.mimo = mimoVal;
+            tower.properties.antenna_height_m = heightVal;
+            tower.properties.radius_multiplier = mult;
+            tower.properties.technology = `5G NR (${freqVal === 700 ? '700MHz' : (freqVal === 28000 ? '28GHz mmWave' : '3.5GHz n78')})`;
+
+            document.getElementById('tcp-tower-title').textContent = newName;
+            document.getElementById('tcp-height-val').textContent = `${heightVal} meters`;
+            
+            const effectiveRadius = Math.round((tower.properties.coverage_radius_m || 480) * mult);
+            document.getElementById('tcp-stat-radius').textContent = `${effectiveRadius} m`;
+
+            // Update Map Source
+            if (map.getSource('cell-towers')) {
+                map.getSource('cell-towers').setData(towersGeoJSON);
+            }
+
+            // Recalculate AI & Speed Tiles
+            recalculateAIRecommendations();
+        };
+
+        ['tcp-tower-name', 'tcp-freq', 'tcp-power', 'tcp-mimo', 'tcp-height'].forEach(id => {
+            const elem = document.getElementById(id);
+            if (elem) {
+                elem.addEventListener('input', updateCurrentTowerConfig);
+                elem.addEventListener('change', updateCurrentTowerConfig);
+            }
+        });
+
+        // Delete Tower inside Panel
+        const tcpDeleteBtn = document.getElementById('tcp-btn-delete');
+        if (tcpDeleteBtn) {
+            tcpDeleteBtn.addEventListener('click', () => {
+                const towerId = document.getElementById('tcp-tower-id').value;
+                if (towerId) {
+                    window.deleteBuildSenseTower(towerId);
+                    const panel = document.getElementById('tower-control-panel');
+                    if (panel) panel.classList.add('hidden');
+                }
+            });
+        }
 
         // Delete Tower Global Function
         window.deleteBuildSenseTower = function(towerId) {
