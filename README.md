@@ -125,9 +125,11 @@ BUILDSENSE/
 | **La Pyae Aung** | Data Engineer & Geospatial Analyst | [GitHub Profile](#) |
 | **Su Hlaing Thin** | Telecom Radio Propagation Specialist | [GitHub Profile](#) |
 
----
 
+
+---
+<!--
 ## 📜 License
 
-This project is open-source software licensed under the [MIT License](LICENSE).
+This project is open-source software licensed under the [MIT License](LICENSE). --->
 
