@@ -119,8 +119,8 @@ BUILDSENSE/
 - **Team Code:** MM-021
 - **Competition:** ASEAN GeoAI Fusion 2026
 
-| Team Member Name | Role & Responsibility | Contact / GitHub |
-| :--- | :--- | :--- |
+| Team Member Name | Contact / GitHub |
+| :--- | :--- | 
 | **Khun Thi Han** | [@KhunThiHan](https://github.com/Tomoe-12) |
 | **La Pyae Aung** | [GitHub Profile](#) |
 | **Su Hlaing Thin** |[GitHub Profile](#) |
