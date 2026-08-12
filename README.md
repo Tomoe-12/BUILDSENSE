@@ -4,7 +4,7 @@
 > **Developed by:** Team Triad  
 > **Project Name:** BUILDSENSE  
 > **Team Code:** MM-021  
-> **Live Demo:** [Deploy on Vercel](https://buildsense-5g.vercel.app) | **Colab Notebook:** [`GeoTelecom_3D_Colab.ipynb`](./GeoTelecom_3D_Colab.ipynb) 
+> **Live Demo:** [Deploy on Vercel](https://triad-buildsense.vercel.app/) | **Colab Notebook:** [`GeoTelecom_3D_Colab.ipynb`](./GeoTelecom_3D_Colab.ipynb) 
 
 ---
 
