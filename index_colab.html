@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
     <style>
         /* ==========================================================================
-   BuildSense Engineered for ASEAN GeoAI Fusion 2026
+   BuildSense — iOS Light Design System & Responsive Layout
+   Engineered for ASEAN GeoAI Fusion 2026
    ========================================================================== */
 
 :root {
@@ -767,6 +768,126 @@ input:checked + .slider:before {
     }
 }
 
+/* MapLibre Custom Popups & High-Contrast Standout Close Button */
+.maplibregl-popup {
+    z-index: 9999;
+}
+
+.maplibregl-popup-content {
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-radius: 18px !important;
+    border: 1px solid rgba(0, 122, 255, 0.2) !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18) !important;
+    padding: 16px 18px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif !important;
+    min-width: 250px;
+}
+
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+    border-top-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+.maplibregl-popup-anchor-top .maplibregl-popup-tip {
+    border-bottom-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+.maplibregl-popup-anchor-left .maplibregl-popup-tip {
+    border-right-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+.maplibregl-popup-anchor-right .maplibregl-popup-tip {
+    border-left-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+/* High-Contrast Standout Close Button */
+.maplibregl-popup-close-button {
+    width: 28px !important;
+    height: 28px !important;
+    top: 10px !important;
+    right: 10px !important;
+    border-radius: 50% !important;
+    background: rgba(120, 120, 128, 0.15) !important;
+    color: #1c1c1e !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 26px !important;
+    text-align: center !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.maplibregl-popup-close-button:hover {
+    background: #ff3b30 !important;
+    color: #ffffff !important;
+    border-color: #ff3b30 !important;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 59, 48, 0.35) !important;
+}
+
+/* Popup Inner Formatting */
+.popup-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1c1c1e;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(60, 60, 67, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.popup-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.popup-row .label {
+    color: #8e8e93;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.popup-row .val {
+    color: #1c1c1e;
+    font-weight: 700;
+}
+
+.btn-delete-tower {
+    width: 100%;
+    background: rgba(255, 59, 48, 0.1);
+    color: #ff3b30;
+    border: 1px solid rgba(255, 59, 48, 0.25);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-delete-tower:hover {
+    background: #ff3b30;
+    color: #ffffff;
+    border-color: #ff3b30;
+    box-shadow: 0 4px 12px rgba(255, 59, 48, 0.3);
+}
+
         html, body { background-color: #060a14 !important; height: 100vh !important; width: 100vw !important; margin: 0; padding: 0; overflow: hidden; }
         #app-container { height: 100vh !important; width: 100vw !important; max-width: 100% !important; border-radius: 0px; overflow: hidden; border: none; display: flex; flex-direction: column; }
         #main-layout { height: calc(100vh - 64px) !important; width: 100vw !important; display: flex; flex: 1; position: relative; overflow: hidden; }
@@ -812,7 +933,7 @@ input:checked + .slider:before {
         <header id="header">
             <div class="brand-section">
                 <div class="header-title">
-                    <h1>BUILDSENSE</h1>
+                    <h1>BUILDSENSE 5G</h1>
                     <p>Team Triad | Southern Shan Digital Twin & 5G Signal Engine</p>
                 </div>
             </div>
@@ -1173,7 +1294,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!map.getSource('cell-towers')) {
             map.addSource('cell-towers', { type: 'geojson', data: towersGeoJSON });
             
-            // Animated Outer Signal Wave (Geographically Scaled in Meters)
+            // Animated Outer Signal Wave (Geographically Scaled in Meters & Dynamically Scaled by Frequency Multiplier)
             map.addLayer({
                 id: 'layer-signal-wave',
                 type: 'circle',
@@ -1184,12 +1305,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         ['exponential', 2],
                         ['zoom'],
                         0, 0,
-                        10, ['*', ['get', 'coverage_radius_m'], 0.024],
-                        12, ['*', ['get', 'coverage_radius_m'], 0.096],
-                        14, ['*', ['get', 'coverage_radius_m'], 0.385],
-                        16, ['*', ['get', 'coverage_radius_m'], 1.54],
-                        18, ['*', ['get', 'coverage_radius_m'], 6.16],
-                        20, ['*', ['get', 'coverage_radius_m'], 24.6]
+                        10, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 0.024],
+                        12, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 0.096],
+                        14, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 0.385],
+                        16, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 1.54],
+                        18, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 6.16],
+                        20, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 24.6]
                     ],
                     'circle-color': '#00f2fe',
                     'circle-opacity': 0.18,
@@ -1231,9 +1352,36 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 4. AI Proposed 5G Small Cells Layer (🟢 Green Pins)
+        // 4. AI Proposed 5G Small Cells Layer (🟢 Green Pins & Dynamic Blue Coverage Circles)
         if (!map.getSource('recommended-5g')) {
             map.addSource('recommended-5g', { type: 'geojson', data: recommendedGeoJSON });
+            
+            map.addLayer({
+                id: 'layer-proposed-signal-wave',
+                type: 'circle',
+                source: 'recommended-5g',
+                paint: {
+                    'circle-radius': [
+                        'interpolate',
+                        ['exponential', 2],
+                        ['zoom'],
+                        0, 0,
+                        10, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.024],
+                        12, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.096],
+                        14, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 0.385],
+                        16, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 1.54],
+                        18, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 6.16],
+                        20, ['*', ['coalesce', ['get', 'target_coverage_radius_m'], 480], 24.6]
+                    ],
+                    'circle-color': '#00ff88',
+                    'circle-opacity': 0.15,
+                    'circle-stroke-width': 1.8,
+                    'circle-stroke-color': '#00ff88',
+                    'circle-pitch-scale': 'map',
+                    'circle-pitch-alignment': 'map'
+                }
+            });
+
             map.addLayer({
                 id: 'layer-proposed-5g',
                 type: 'circle',
@@ -1563,23 +1711,46 @@ document.addEventListener('DOMContentLoaded', () => {
             let deleteBtnHtml = "";
             if (props.is_user_deployed) {
                 deleteBtnHtml = `
-                    <div style="margin-top:10px; text-align:center;">
+                    <div style="margin-top:12px; text-align:center;">
                         <button id="btn-delete-tower-${towerId}" class="btn-delete-tower" onclick="window.deleteBuildSenseTower('${towerId}')">
-                            🗑️ Delete Deployed Tower
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete Deployed Tower
                         </button>
                     </div>
                 `;
             }
 
+            const titleText = props.is_user_deployed ? 'User-Deployed 5G Cell' : 'Legacy 4G/3G Tower';
+            const titleColor = props.is_user_deployed ? '#b7791f' : '#d90429';
+            const titleIcon = props.is_user_deployed 
+                ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b7791f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>`
+                : `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d90429" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H7"></path><path d="M19 9H5"></path></svg>`;
+
             new maplibregl.Popup()
                 .setLngLat(e.lngLat)
                 .setHTML(`
-                    <div class="popup-title">${props.is_user_deployed ? '🟡 User-Deployed 5G Cell' : '🔴 Legacy 4G/3G Tower'}</div>
-                    <div class="popup-row"><span class="label">Name:</span> <span class="val">${props.name}</span></div>
-                    <div class="popup-row"><span class="label">Technology:</span> <span class="val">${props.technology}</span></div>
-                    <div class="popup-row"><span class="label">Tx Power:</span> <span class="val">${props.tx_power_w || 40} W</span></div>
-                    <div class="popup-row"><span class="label">Coverage Radius:</span> <span class="val">${Math.round((props.coverage_radius_m || 480) * (props.radius_multiplier || 1.0))} m</span></div>
-                    <div class="popup-row"><span class="label">Status:</span> <span class="val" style="color:${props.is_user_deployed ? '#ffd166' : '#00ff88'}">${props.status}</span></div>
+                    <div class="popup-title" style="color:${titleColor}">
+                        ${titleIcon} <span>${titleText}</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Name:</span>
+                        <span class="val">${props.name}</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path><circle cx="12" cy="12" r="2"></circle><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path><path d="M19.1 4.9c3.9 3.9 3.9 10.3 0 14.2"></path></svg> Tech:</span>
+                        <span class="val">${props.technology}</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg> Tx Power:</span>
+                        <span class="val">${props.tx_power_w || 40} W</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10"></path></svg> Radius:</span>
+                        <span class="val">${Math.round((props.coverage_radius_m || 480) * (props.radius_multiplier || 1.0))} m</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Status:</span>
+                        <span class="val" style="color:${props.is_user_deployed ? '#b7791f' : '#00a86b'}">${props.status}</span>
+                    </div>
                     ${deleteBtnHtml}
                 `)
                 .addTo(map);
