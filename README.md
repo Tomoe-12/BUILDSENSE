@@ -121,9 +121,9 @@ BUILDSENSE/
 
 | Team Member Name | Role & Responsibility | Contact / GitHub |
 | :--- | :--- | :--- |
-| **Khun Thi Han** | Lead GeoAI Engineer & 3D WebGL Developer | [@KhunThiHan](https://github.com/Tomoe-12) |
-| **La Pyae Aung** | Data Engineer & Geospatial Analyst | [GitHub Profile](#) |
-| **Su Hlaing Thin** | Telecom Radio Propagation Specialist | [GitHub Profile](#) |
+| **Khun Thi Han** | [@KhunThiHan](https://github.com/Tomoe-12) |
+| **La Pyae Aung** | [GitHub Profile](#) |
+| **Su Hlaing Thin** |[GitHub Profile](#) |
 
 
 
