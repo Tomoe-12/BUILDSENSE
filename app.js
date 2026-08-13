@@ -150,12 +150,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         ['exponential', 2],
                         ['zoom'],
                         0, 0,
-                        10, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 0.024],
-                        12, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 0.096],
-                        14, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 0.385],
-                        16, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 1.54],
-                        18, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 6.16],
-                        20, ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], 24.6]
+                        10, ['*', ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], ['coalesce', ['get', 'height_factor'], 1.0]], 0.024],
+                        12, ['*', ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], ['coalesce', ['get', 'height_factor'], 1.0]], 0.096],
+                        14, ['*', ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], ['coalesce', ['get', 'height_factor'], 1.0]], 0.385],
+                        16, ['*', ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], ['coalesce', ['get', 'height_factor'], 1.0]], 1.54],
+                        18, ['*', ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], ['coalesce', ['get', 'height_factor'], 1.0]], 6.16],
+                        20, ['*', ['*', ['*', ['get', 'coverage_radius_m'], ['coalesce', ['get', 'radius_multiplier'], 1.0]], ['coalesce', ['get', 'height_factor'], 1.0]], 24.6]
                     ],
                     'circle-color': '#00f2fe',
                     'circle-opacity': 0.18,
@@ -298,6 +298,24 @@ document.addEventListener('DOMContentLoaded', () => {
         return centroids;
     }
 
+    // Height-aware radio horizon factor. The reference antenna height is 30 m
+    // and the receiver is assumed to be about 2 m above ground. The bounded
+    // factor keeps height meaningful without overpowering frequency, power,
+    // terrain, and weather effects in this simplified client-side model.
+    function getTowerHeightFactor(tower, receiverHeightM = 2) {
+        const antennaHeightM = Math.max(1, Number(tower?.properties?.antenna_height_m) || 30);
+        const receiverHeight = Math.max(1, Number(receiverHeightM) || 2);
+        const factor = Math.sqrt((antennaHeightM + receiverHeight) / 32);
+        return Math.max(0.65, Math.min(1.35, factor));
+    }
+
+    function getTowerEffectiveRadius(tower, fallbackMult = 1, receiverHeightM = 2) {
+        const props = tower.properties || {};
+        const baseRadius = Number(props.coverage_radius_m) || 480;
+        const radiusMultiplier = Number(props.radius_multiplier) || fallbackMult;
+        return baseRadius * radiusMultiplier * getTowerHeightFactor(tower, receiverHeightM);
+    }
+
     // Dynamic Real-Time Re-Clustering & Speed Tiles Update
     function recalculateAIRecommendations() {
         const buildingsData = window.BUILDINGS_DATA || window.BUILDINGS_3D_DATA;
@@ -307,6 +325,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (simWeather === "rain") envMult *= 0.82;
         if (simWeather === "foliage") envMult *= 0.75;
         if (simTerrain === "diffraction") envMult *= 0.85;
+        // Use the current environmental multiplier as the fallback for towers
+        // that do not have their own radius multiplier. This must be defined
+        // before the coverage, speed-grid, and H3 recalculations run.
+        const globalMult = envMult;
 
         // 0. Ensure Red Legacy Towers stay fixed baseline, while preserving individual custom radius for user-deployed towers!
         if (towersGeoJSON.features) {
@@ -314,6 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!t.properties.is_user_deployed) {
                     t.properties.radius_multiplier = 1.0 * envMult; // Fixed baseline + environmental weather factor
                 }
+                t.properties.height_factor = getTowerHeightFactor(t);
             });
             if (map.getSource('cell-towers')) {
                 map.getSource('cell-towers').setData(towersGeoJSON);
@@ -333,8 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (const t of allTowers) {
                 const tCoord = t.geometry.coordinates;
                 const tLng = tCoord[0], tLat = tCoord[1];
-                const tMult = t.properties.radius_multiplier || globalMult;
-                const tRadius = (t.properties.coverage_radius_m || 480) * tMult;
+                const tRadius = getTowerEffectiveRadius(t, globalMult, Number(bld.properties.height) || 2);
                 
                 const dy = (bLat - tLat) * 111000;
                 const dx = (bLng - tLng) * 103800;
@@ -363,7 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     "ai_confidence": `${(88.0 + (i * 1.4) % 10).toFixed(1)}%`,
                     "estimated_speed_boost_mbps": `+${Math.round((simBw / 100) * 180 + (c.count || 5) * 1.5)} Mbps`,
                     "site_type": "Dynamic 5G Small Cell",
-                    "target_coverage_radius_m": Math.round(480 * globalMult),
+                    "target_coverage_radius_m": Math.round(480 * globalMult * getTowerHeightFactor({ properties: { antenna_height_m: 30 } })),
                     "uncovered_buildings_served": c.count || 12
                 }
             }))
@@ -405,8 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
             towers.forEach(t => {
                 const tCoord = t.geometry.coordinates;
                 const tLng = tCoord[0], tLat = tCoord[1];
-                const tMult = t.properties.radius_multiplier || globalMult;
-                const tRadius = (t.properties.coverage_radius_m || 480) * tMult;
+                const tRadius = getTowerEffectiveRadius(t, globalMult);
 
                 const dy = (cLat - tLat) * 111000;
                 const dx = (cLng - tLng) * 103800;
@@ -454,8 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 towers.forEach(t => {
                     const tCoord = t.geometry.coordinates;
                     const tLng = tCoord[0], tLat = tCoord[1];
-                    const tMult = t.properties.radius_multiplier || globalMult;
-                    const tRadius = (t.properties.coverage_radius_m || 480) * tMult;
+                    const tRadius = getTowerEffectiveRadius(t, globalMult);
 
                     const dy = (cLat - tLat) * 111000;
                     const dx = (cLng - tLng) * 103800;
@@ -586,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="popup-row">
                         <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10"></path></svg> Radius:</span>
-                        <span class="val">${Math.round((props.coverage_radius_m || 480) * (props.radius_multiplier || 1.0))} m</span>
+                        <span class="val">${Math.round(getTowerEffectiveRadius(feat, 1))} m</span>
                     </div>
                     <div class="popup-row">
                         <span class="label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Status:</span>
@@ -628,7 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Stats
             const mult = props.radius_multiplier || 1.0;
-            const radius = Math.round((props.coverage_radius_m || 480) * mult);
+            const radius = Math.round(getTowerEffectiveRadius(tower, 1));
             document.getElementById('tcp-stat-radius').textContent = `${radius} m`;
             document.getElementById('tcp-stat-users').textContent = `${props.connected_subscribers || 850} Subscribers`;
             document.getElementById('tcp-stat-status').textContent = props.status || 'Active 5G Operational';
@@ -677,7 +697,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('tcp-tower-title').textContent = newName;
             document.getElementById('tcp-height-val').textContent = `${heightVal} meters`;
             
-            const effectiveRadius = Math.round((tower.properties.coverage_radius_m || 480) * mult);
+            const effectiveRadius = Math.round(getTowerEffectiveRadius(tower, 1));
             document.getElementById('tcp-stat-radius').textContent = `${effectiveRadius} m`;
 
             // Update Map Source
@@ -898,7 +918,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div style="font-size:12px; color:var(--neon-gold); margin-bottom:4px;"><b>${customName}</b></div>
                         <div class="popup-row"><span class="label">Frequency:</span> <span class="val">${freqLabel}</span></div>
                         <div class="popup-row"><span class="label">Tx Power:</span> <span class="val">${customPower} W</span></div>
-                        <div class="popup-row"><span class="label">Effective Radius:</span> <span class="val">${Math.round(480 * mult)} m</span></div>
+                        <div class="popup-row"><span class="label">Effective Radius:</span> <span class="val">${Math.round(getTowerEffectiveRadius(newTower, 1))} m</span></div>
                     `)
                     .addTo(map);
 
