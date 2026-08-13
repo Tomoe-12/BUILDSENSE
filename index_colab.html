@@ -1727,16 +1727,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Update Ookla Speed Tiles dynamically around towers
+    // Update Ookla Speed Tiles and H3 Hexagons dynamically around towers
     function updateOoklaSpeedTiles(towers, globalMult) {
         if (!speedTilesGeoJSON.features) return;
 
+        // 1. Dynamic Ookla Speed Tiles Upgrade
         speedTilesGeoJSON.features.forEach(tile => {
+            if (tile.properties.original_speed_mbps === undefined) {
+                tile.properties.original_speed_mbps = tile.properties.download_mbps || 15.0;
+            }
+            let maxBoostedSpeed = tile.properties.original_speed_mbps;
+
             const coords = tile.geometry.coordinates[0];
             const cLng = (coords[0][0] + coords[2][0]) / 2;
             const cLat = (coords[0][1] + coords[2][1]) / 2;
-
-            let maxBoostedSpeed = tile.properties.original_speed_mbps || tile.properties.download_mbps;
 
             towers.forEach(t => {
                 const tCoord = t.geometry.coordinates;
@@ -1749,7 +1753,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dist = Math.sqrt(dx*dx + dy*dy);
 
                 if (dist <= tRadius) {
-                    const boost = Math.round((1 - (dist / tRadius)) * (simBw / 100) * 220 + 40);
+                    let boost = 0;
+                    if (t.properties.is_user_deployed) {
+                        const powerW = t.properties.tx_power_w || 40;
+                        const maxSpeedAdd = Math.round(300 + (powerW / 100) * 350); // 5G Cell Boost: +330 to +650 Mbps
+                        boost = Math.round((1 - (dist / tRadius)) * maxSpeedAdd + tile.properties.original_speed_mbps);
+                    } else {
+                        boost = Math.round((1 - (dist / tRadius)) * 140 + tile.properties.original_speed_mbps);
+                    }
                     if (boost > maxBoostedSpeed) {
                         maxBoostedSpeed = boost;
                     }
@@ -1757,24 +1768,28 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             tile.properties.download_mbps = maxBoostedSpeed;
-            if (maxBoostedSpeed >= 120) tile.properties.color = "#00ff88"; // Fast 5G
-            else if (maxBoostedSpeed >= 60) tile.properties.color = "#00b4d8"; // Medium 5G
-            else if (maxBoostedSpeed >= 20) tile.properties.color = "#ffd166"; // 4G Moderate
-            else tile.properties.color = "#ff3366"; // Slow / Dead Zone
+            if (maxBoostedSpeed >= 250) tile.properties.color = "#00ff88";      // Neon Green (Gigabit 5G)
+            else if (maxBoostedSpeed >= 120) tile.properties.color = "#00f2fe"; // Neon Cyan (Fast 5G)
+            else if (maxBoostedSpeed >= 60) tile.properties.color = "#00b4d8";  // Blue (Medium 4G)
+            else if (maxBoostedSpeed >= 25) tile.properties.color = "#ffd166";  // Yellow (Low 4G)
+            else tile.properties.color = "#ff3366";                             // Red (Dead Zone)
         });
 
         if (map.getSource('ookla-tiles')) {
             map.getSource('ookla-tiles').setData(speedTilesGeoJSON);
         }
 
-        // Dynamic H3 Hexagons Speed Upgrade
-        if (h3HexagonsGeoJSON.features) {
+        // 2. Dynamic H3 Hexagons Speed Upgrade
+        if (h3HexagonsGeoJSON && h3HexagonsGeoJSON.features) {
             h3HexagonsGeoJSON.features.forEach(hex => {
+                if (hex.properties.original_speed_mbps === undefined) {
+                    hex.properties.original_speed_mbps = hex.properties.download_mbps || 12.0;
+                }
+                let maxBoostedSpeed = hex.properties.original_speed_mbps;
+
                 const coords = hex.geometry.coordinates[0];
                 const cLng = (coords[0][0] + coords[3][0]) / 2;
                 const cLat = (coords[0][1] + coords[3][1]) / 2;
-
-                let maxBoostedSpeed = hex.properties.original_speed_mbps || hex.properties.download_mbps;
 
                 towers.forEach(t => {
                     const tCoord = t.geometry.coordinates;
@@ -1787,7 +1802,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dist = Math.sqrt(dx*dx + dy*dy);
 
                     if (dist <= tRadius) {
-                        const boost = Math.round((1 - (dist / tRadius)) * (simBw / 100) * 240 + 45);
+                        let boost = 0;
+                        if (t.properties.is_user_deployed) {
+                            const powerW = t.properties.tx_power_w || 40;
+                            const maxSpeedAdd = Math.round(320 + (powerW / 100) * 380); // 5G Cell Boost: +350 to +700 Mbps
+                            boost = Math.round((1 - (dist / tRadius)) * maxSpeedAdd + hex.properties.original_speed_mbps);
+                        } else {
+                            boost = Math.round((1 - (dist / tRadius)) * 150 + hex.properties.original_speed_mbps);
+                        }
                         if (boost > maxBoostedSpeed) {
                             maxBoostedSpeed = boost;
                         }
@@ -1795,10 +1817,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 hex.properties.download_mbps = maxBoostedSpeed;
-                if (maxBoostedSpeed >= 120) hex.properties.color = "#00ff88";
-                else if (maxBoostedSpeed >= 60) hex.properties.color = "#00b4d8";
-                else if (maxBoostedSpeed >= 20) hex.properties.color = "#ffd166";
-                else hex.properties.color = "#ff3366";
+                if (maxBoostedSpeed >= 250) hex.properties.color = "#00ff88";      // Neon Green (Gigabit 5G)
+                else if (maxBoostedSpeed >= 120) hex.properties.color = "#00f2fe"; // Neon Cyan (Fast 5G)
+                else if (maxBoostedSpeed >= 60) hex.properties.color = "#00b4d8";  // Blue (Medium 4G)
+                else if (maxBoostedSpeed >= 25) hex.properties.color = "#ffd166";  // Yellow (Low 4G)
+                else hex.properties.color = "#ff3366";                             // Red (Dead Zone)
             });
 
             if (map.getSource('h3-hexagons')) {
